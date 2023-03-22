@@ -90,6 +90,7 @@ header {
   header {
     min-width: 375px;
     height: 48px;
+    padding-inline: 6.4vw;
   }
 
   .logo {
@@ -97,12 +98,18 @@ header {
     line-height: 111%;
   }
 
+  .about {
+    padding: 114px 6.4vw;
+  }
+
   .about h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
-    width: 327px;
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
     margin-inline: auto;
     order: 0;
   }
@@ -113,7 +120,9 @@ header {
     line-height: 150%;
     text-align: left;
     vertical-align: top;
-    width: 327px;
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
     margin-inline: auto;
     order: 1;
   }
@@ -125,7 +134,9 @@ header {
     color: #7f8cff;
     text-align: left;
     vertical-align: top;
-    width: 327px;
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
     margin-inline: auto;
     order: 2;
   }
@@ -133,7 +144,9 @@ header {
   .about .socialmedia-btn {
     margin-inline: auto;
     order: 3;
-    width: 327px;
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
     justify-content: flex-start;
   }
 }
