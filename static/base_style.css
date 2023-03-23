@@ -11,7 +11,7 @@ body {
   color: #172b4d;
 }
 
-header {
+.nav-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,7 +36,7 @@ header {
 .about {
   display: flex;
   flex-flow: column;
-  background: url(../images/header-shapes-mobile.png);
+  background: url(../images/header-shapes-mobile.svg);
   gap: 12px;
   padding: 114px 24px;
   min-height: 604px;
@@ -87,7 +87,7 @@ header {
 }
 
 @media only screen and (min-width: 375px) {
-  header {
+  .nav-header {
     min-width: 375px;
     height: 48px;
     padding-inline: 6.4vw;
