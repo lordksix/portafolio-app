@@ -49,9 +49,14 @@ body {
   min-height: 604px;
 }
 
-.socialmedia-btn {
+.socialmedia-btn-container {
+  order: 3;
+}
+
+.socialmedia-btn-row {
   display: flex;
   gap: 20px;
+  list-style-type: none;
 }
 
 .social-btn {
@@ -148,9 +153,8 @@ body {
     order: 2;
   }
 
-  .about .socialmedia-btn {
+  .about .socialmedia-btn-row {
     margin-inline: auto;
-    order: 3;
     min-width: 327px;
     width: 87.2vw;
     max-width: 400px;
