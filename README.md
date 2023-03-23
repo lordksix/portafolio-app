@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Hello World</b></h3>
+  <h3><b>Porfatolio Web App</b></h3>
 
 </div>
 
@@ -28,9 +28,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Hello World] <a name="about-project"></a>
+# 📖 [Portafolio] <a name="about-project"></a>
 
-**Hello Microverse** is a simple project that showcases good practices using Git and Github, and the use of Github Actions.
+**Portafolio Web App** is a project to showcare different works and information about the a person or group.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -50,9 +50,11 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Hello World webpage**
-- **Showcase og GitHub Actions and linters**
-- **Showcase of best practices for commit and PR communication**
+- **Portafolio webpage**
+- **Mobile first**
+- **Responsiveness and flexibility**
+- **Fast access to social media and other ways of contact**
+- **Easy to the eyes and cultivating at the same time**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -74,12 +76,14 @@ To clone or fork and run it in a browser
 
 Clone this repository to your desired folder:
 
+For example, using Ubuntu:
+
 ```sh
   cd my-desired-folder
   git clone git@github.com:lordksix/hello-microverse.git
 ```
 
-For more information on how to clone or a repository:
+For more information on how to clone or fork a repository:
 - <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">How to clone a repo</a>
 - <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">How to fork a repo</a>
 
@@ -119,7 +123,10 @@ To deploy this project, use any web hosting service.
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-There is no plan for future features in this project
+Future chaves:
+- Add more detail to contact form
+- Improve responsiveness to bigger screen sizes
+- Add small CSS animations and interactivity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

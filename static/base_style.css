@@ -13,6 +13,11 @@ body {
   display: flex;
   flex-flow: column;
   color: #172b4d;
+  background-color: #e5e5e5;
+}
+
+header {
+  background-color: #fff;
 }
 
 .nav-header {
@@ -40,17 +45,16 @@ body {
   height: 12px;
 }
 
-.about {
+.info {
   display: flex;
   flex-flow: column;
-  background: url(../images/header-shapes-mobile.svg);
   gap: 12px;
   padding: 114px 24px;
-  min-height: 604px;
 }
 
-.socialmedia-btn-container {
-  order: 3;
+.intro {
+  background: url(../images/header-shapes-mobile.svg), url(../images/header-background-mobile.svg);
+  background-size: cover;
 }
 
 .socialmedia-btn-row {
@@ -98,6 +102,249 @@ body {
   background: url(../images/peaceicon.svg) no-repeat;
 }
 
+.works {
+  padding: 114px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 450px));
+  column-gap: 24px;
+  row-gap: 88px;
+  justify-content: center;
+}
+
+.works img {
+  width: 100%;
+  height: auto;
+}
+
+.work {
+  padding: 16px;
+  gap: 12px;
+  align-items: center;
+  border: 0.1px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  background-color: #fff;
+  flex-flow: column;
+  flex-grow: 0;
+}
+
+.work-card {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.work-card li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.work-btn {
+  color: #396df2;
+  background-color: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 141%;
+  letter-spacing: 0.03em;
+}
+
+.work-card .work-btn {
+  margin-block: 8px;
+}
+
+.division {
+  background: url(../images/Counter.svg);
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+}
+
+.cat-title {
+  font-weight: 600;
+  color: #344563;
+  font-size: 13px;
+  line-height: 123%;
+}
+
+.cat-descrip {
+  font-weight: 600;
+  color: #7a869a;
+  font-size: 13px;
+  line-height: 123%;
+}
+
+.work-descrip {
+  font-weight: 400;
+  color: #344563;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.work-langs {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.work-lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.work-lang span {
+  font-weight: 500;
+  color: #6070ff;
+}
+
+.work-btn:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.work-btn:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.work-btn:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+  background-color: #fff;
+}
+
+.about-contact {
+  background: url(../images/Base-about-my-self.svg) no-repeat;
+  background-size: cover;
+  max-width: 892.8px;
+  margin-inline: auto;
+}
+
+.skills {
+  display: flex;
+  flex-flow: column;
+}
+
+.skills li {
+  list-style-type: none;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  width: 87.2%;
+  min-width: 200px;
+  max-width: 327px;
+  padding-block: 24px;
+  padding-inline: 12px 40px;
+  align-items: center;
+  border-bottom: 1px solid #dfe1e6;
+  cursor: pointer;
+}
+
+.arrow {
+  background: url(../images/arrow.svg) no-repeat;
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+}
+
+.skills .skill-active {
+  border-bottom: 0;
+}
+
+.arrow-active {
+  transform: rotate(90deg);
+}
+
+.sub-skill {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-inline: 12px;
+  padding-block: 9px 9.72px;
+  justify-content: flex-start;
+  background-color: #f7f7f9;
+  margin: 12px;
+  border-radius: 8px;
+  min-width: 190px;
+  max-width: 303px;
+  cursor: pointer;
+}
+
+.sub-skill:hover {
+  background-color: #bbbbbd;
+}
+
+.skills .sub-skill {
+  border-bottom: 0;
+}
+
+.sub-skill img {
+  width: 48px;
+  height: 48px;
+}
+
+.about-contact .contact-container {
+  background-image: url(../images/Contact-me.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-container .section-title {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-container .description {
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding-block-start: 52px;
+}
+
+.form-section input[type='text'],
+.form-section input[type='email'],
+.form-section textarea {
+  min-width: 200px;
+  width: 87.2vw;
+  max-width: 400px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 118%;
+  height: 48px;
+  padding-inline-start: 16px;
+}
+
+.form-section textarea {
+  font-size: 15px;
+  line-height: 160%;
+  height: 170px;
+}
+
 @media only screen and (min-width: 375px) {
   .nav-header {
     min-width: 375px;
@@ -110,11 +357,13 @@ body {
     line-height: 111%;
   }
 
-  .about {
+  .info {
     padding: 114px 6.4vw;
+    margin-inline: auto;
+    align-items: flex-start;
   }
 
-  .about h1 {
+  .section-title {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -122,11 +371,9 @@ body {
     min-width: 327px;
     width: 87.2vw;
     max-width: 400px;
-    margin-inline: auto;
-    order: 0;
   }
 
-  .about .description {
+  .description {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -134,12 +381,10 @@ body {
     vertical-align: top;
     min-width: 327px;
     width: 87.2vw;
-    max-width: 400px;
-    margin-inline: auto;
-    order: 1;
+    max-width: 750px;
   }
 
-  .about .makeconection {
+  .info .makeconection {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -149,15 +394,52 @@ body {
     min-width: 327px;
     width: 87.2vw;
     max-width: 400px;
-    margin-inline: auto;
-    order: 2;
   }
 
-  .about .socialmedia-btn-row {
+  .info .socialmedia-btn-row {
     margin-inline: auto;
     min-width: 327px;
     width: 87.2vw;
     max-width: 400px;
     justify-content: flex-start;
+  }
+
+  .work-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 133%;
+    color: #172b4d;
+  }
+
+  .work-card li {
+    margin-inline: 6px;
+  }
+
+  .skills {
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
+  }
+
+  .skill {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+  }
+
+  .about-contact .contact-container {
+    align-items: center;
+    padding-block: 103px 45px;
+  }
+
+  .contact-container .section-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+  }
+
+  .contact-container .description {
+    font-size: 20px;
+    line-height: 140%;
   }
 }
