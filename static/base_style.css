@@ -13,6 +13,11 @@ body {
   display: flex;
   flex-flow: column;
   color: #172b4d;
+  background-color: #e5e5e5;
+}
+
+header {
+  background-color: #fff;
 }
 
 .nav-header {
@@ -43,7 +48,7 @@ body {
 .about {
   display: flex;
   flex-flow: column;
-  background: url(../images/header-shapes-mobile.svg);
+  background: url(../images/header-shapes-mobile.svg), url(../images/header-background-mobile.svg);
   gap: 12px;
   padding: 114px 24px;
 }
