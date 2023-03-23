@@ -83,7 +83,7 @@ For example, using Ubuntu:
   git clone git@github.com:lordksix/hello-microverse.git
 ```
 
-For more information on how to clone or a repository:
+For more information on how to clone or fork a repository:
 - <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">How to clone a repo</a>
 - <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">How to fork a repo</a>
 
