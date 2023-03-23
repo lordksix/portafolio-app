@@ -57,10 +57,6 @@ header {
   background-size: cover;
 }
 
-.socialmedia-btn-container {
-  order: 3;
-}
-
 .socialmedia-btn-row {
   display: flex;
   gap: 20px;
@@ -143,6 +139,26 @@ header {
   display: inline-block;
 }
 
+.work-btn {
+  color: #396df2;
+  background-color: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 141%;
+}
+
+.work-card .work-btn {
+  margin-block: 8px;
+}
+
 .division {
   background: url(../images/Counter.svg);
   display: inline-block;
@@ -191,18 +207,6 @@ header {
   color: #6070ff;
 }
 
-.work-btn {
-  color: #396df2;
-  background-color: #fff;
-  border: 1px solid #7f8cff;
-  border-radius: 8px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-}
-
 .work-btn:hover {
   background: #6070ff;
   color: #fff;
@@ -218,6 +222,78 @@ header {
   color: #5e6c84;
   border: 1px solid #c1c7d0;
   background-color: #fff;
+}
+
+.about-contact {
+  background: url(../images/Base-about-my-self.svg) no-repeat;
+  background-size: cover;
+  max-width: 892.8px;
+  margin-inline: auto;
+}
+
+.skills {
+  display: flex;
+  flex-flow: column;
+}
+
+.skills li {
+  list-style-type: none;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  width: 87.2%;
+  min-width: 200px;
+  max-width: 327px;
+  padding-block: 24px;
+  padding-inline: 12px 40px;
+  align-items: center;
+  border-bottom: 1px solid #dfe1e6;
+  cursor: pointer;
+}
+
+.arrow {
+  background: url(../images/arrow.svg) no-repeat;
+  display: inline-block;
+  width: 8px;
+  height: 14px;
+}
+
+.skills .skill-active {
+  border-bottom: 0;
+}
+
+.arrow-active {
+  transform: rotate(90deg);
+}
+
+.sub-skill {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-inline: 12px;
+  padding-block: 9px 9.72px;
+  justify-content: flex-start;
+  background-color: #f7f7f9;
+  margin: 12px;
+  border-radius: 8px;
+  min-width: 190px;
+  max-width: 303px;
+  cursor: pointer;
+}
+
+.sub-skill:hover {
+  background-color: #bbbbbd;
+}
+
+.skills .sub-skill {
+  border-bottom: 0;
+}
+
+.sub-skill img {
+  width: 48px;
+  height: 48px;
 }
 
 @media only screen and (min-width: 375px) {
@@ -246,7 +322,6 @@ header {
     min-width: 327px;
     width: 87.2vw;
     max-width: 400px;
-    order: 0;
   }
 
   .info .description {
@@ -258,7 +333,6 @@ header {
     min-width: 327px;
     width: 87.2vw;
     max-width: 750px;
-    order: 1;
   }
 
   .info .makeconection {
@@ -271,7 +345,6 @@ header {
     min-width: 327px;
     width: 87.2vw;
     max-width: 400px;
-    order: 2;
   }
 
   .info .socialmedia-btn-row {
@@ -291,5 +364,17 @@ header {
 
   .work-card li {
     margin-inline: 6px;
+  }
+
+  .skills {
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
+  }
+
+  .skill {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
   }
 }
