@@ -132,6 +132,94 @@ header {
   flex-grow: 0;
 }
 
+.work-card {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.work-card li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.division {
+  background: url(../images/Counter.svg);
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+}
+
+.cat-title {
+  font-weight: 600;
+  color: #344563;
+  font-size: 13px;
+  line-height: 123%;
+}
+
+.cat-descrip {
+  font-weight: 600;
+  color: #7a869a;
+  font-size: 13px;
+  line-height: 123%;
+}
+
+.work-descrip {
+  font-weight: 400;
+  color: #344563;
+  font-size: 15px;
+  line-height: 160%;
+}
+
+.work-langs {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.work-lang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+}
+
+.work-lang span {
+  font-weight: 500;
+  color: #6070ff;
+}
+
+.work-btn {
+  color: #396df2;
+  background-color: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+}
+
+.work-btn:hover {
+  background: #6070ff;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.work-btn:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.work-btn:disabled {
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+  background-color: #fff;
+}
+
 @media only screen and (min-width: 375px) {
   .nav-header {
     min-width: 375px;
@@ -192,5 +280,16 @@ header {
     width: 87.2vw;
     max-width: 400px;
     justify-content: flex-start;
+  }
+
+  .work-card h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 133%;
+    color: #172b4d;
+  }
+
+  .work-card li {
+    margin-inline: 6px;
   }
 }
