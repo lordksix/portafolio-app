@@ -106,6 +106,32 @@ header {
   background: url(../images/peaceicon.svg) no-repeat;
 }
 
+.works {
+  padding: 114px 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 450px));
+  column-gap: 24px;
+  row-gap: 88px;
+  justify-content: center;
+}
+
+.works img {
+  width: 100%;
+  height: auto;
+}
+
+.work {
+  padding: 16px;
+  gap: 12px;
+  align-items: center;
+  border: 0.1px solid #dfe1e6;
+  border-radius: 16px;
+  display: flex;
+  background-color: #fff;
+  flex-flow: column;
+  flex-grow: 0;
+}
+
 @media only screen and (min-width: 375px) {
   .nav-header {
     min-width: 375px;
