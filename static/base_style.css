@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-flow: column;
+  color: #172b4d;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 24px;
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.logo a {
+  color: #6070ff;
+}
+
+.menu {
+  background: url(../images/Union.svg) no-repeat;
+  width: 18px;
+  height: 12px;
+}
+
+.about {
+  display: flex;
+  flex-flow: column;
+  background: url(../images/header-shapes-mobile.svg);
+  gap: 12px;
+  padding: 114px 24px;
+  min-height: 604px;
+}
+
+.socialmedia-btn-container {
+  order: 3;
+}
+
+.socialmedia-btn-row {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.social-btn {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 0;
+}
+
+.social-btn:hover {
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.social-btn:active {
+  background: #2230d2;
+}
+
+#btn-tw {
+  background: url(../images/twicon.svg) no-repeat;
+}
+
+#btn-in {
+  background: url(../images/Linkedin-icon.svg) no-repeat;
+}
+
+#btn-m {
+  height: 16px;
+  background: url(../images/micon.svg) no-repeat;
+}
+
+#btn-gh {
+  width: 18px;
+  background: url(../images/githubicon.svg) no-repeat;
+}
+
+#btn-pc {
+  width: 14.17px;
+  background: url(../images/peaceicon.svg) no-repeat;
+}
+
+@media only screen and (min-width: 375px) {
+  .nav-header {
+    min-width: 375px;
+    height: 48px;
+    padding-inline: 6.4vw;
+  }
+
+  .logo {
+    font-size: 18px;
+    line-height: 111%;
+  }
+
+  .about {
+    padding: 114px 6.4vw;
+  }
+
+  .about h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
+    margin-inline: auto;
+    order: 0;
+  }
+
+  .about .description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: left;
+    vertical-align: top;
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
+    margin-inline: auto;
+    order: 1;
+  }
+
+  .about .makeconection {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #7f8cff;
+    text-align: left;
+    vertical-align: top;
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
+    margin-inline: auto;
+    order: 2;
+  }
+
+  .about .socialmedia-btn-row {
+    margin-inline: auto;
+    min-width: 327px;
+    width: 87.2vw;
+    max-width: 400px;
+    justify-content: flex-start;
+  }
+}
