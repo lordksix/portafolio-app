@@ -299,6 +299,8 @@ header {
 
 .about-contact .contact-container {
   background-image: url(../images/Contact-me.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contact-container .section-title {
@@ -427,6 +429,7 @@ header {
 
   .about-contact .contact-container {
     align-items: center;
+    padding-block: 103px 45px;
   }
 
   .contact-container .section-title {
