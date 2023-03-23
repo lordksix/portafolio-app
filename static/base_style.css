@@ -153,6 +153,7 @@ header {
   font-weight: 500;
   font-size: 17px;
   line-height: 141%;
+  letter-spacing: 0.03em;
 }
 
 .work-card .work-btn {
@@ -296,6 +297,52 @@ header {
   height: 48px;
 }
 
+.about-contact .contact-container {
+  background-image: url(../images/Contact-me.png);
+}
+
+.contact-container .section-title {
+  color: #fff;
+  text-align: center;
+}
+
+.contact-container .description {
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  padding-block-start: 52px;
+}
+
+.form-section input[type='text'],
+.form-section input[type='email'],
+.form-section textarea {
+  min-width: 200px;
+  width: 87.2vw;
+  max-width: 400px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  color: #172b4d;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 118%;
+  height: 48px;
+  padding-inline-start: 16px;
+}
+
+.form-section textarea {
+  font-size: 15px;
+  line-height: 160%;
+  height: 170px;
+}
+
 @media only screen and (min-width: 375px) {
   .nav-header {
     min-width: 375px;
@@ -314,7 +361,7 @@ header {
     align-items: flex-start;
   }
 
-  .info h2 {
+  .section-title {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -324,7 +371,7 @@ header {
     max-width: 400px;
   }
 
-  .info .description {
+  .description {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -355,7 +402,7 @@ header {
     justify-content: flex-start;
   }
 
-  .work-card h2 {
+  .work-title {
     font-weight: 700;
     font-size: 32px;
     line-height: 133%;
@@ -376,5 +423,20 @@ header {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
+  }
+
+  .about-contact .contact-container {
+    align-items: center;
+  }
+
+  .contact-container .section-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+  }
+
+  .contact-container .description {
+    font-size: 20px;
+    line-height: 140%;
   }
 }

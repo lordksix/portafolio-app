@@ -20,7 +20,7 @@
     </nav>
   </header>
   <section class="intro info">
-    <h2>I'm Alexandra. Glad to see you!</h2>
+    <h2 class="section-title">I'm Alexandra. Glad to see you!</h2>
     <p class="description">I'm a software developer! I can help you build a product, 
       feature or website Look through some of my work and experience! If you like what 
       you see and have a project you need coded, don't hesitate to contact me.
@@ -40,7 +40,7 @@
     <div class="work">
       <img src="./images/topic-porta.svg" alt="Snapshot of the Tonic Project, 2015" class="work-image">
       <div class="work-card">
-        <h2>Tonic</h2>
+        <h3 class="work-title">Tonic</h3>
         <ul class="work-cat">
           <li class="cat-title">CANOPY</li>
           <li><span class="division"></span></li>
@@ -63,7 +63,7 @@
     <div class="work">
       <img src="./images/mul-stories-porta.svg" alt="Snapshot of the Multi Post Stories Project, 2015" class="work-image">
       <div class="work-card">
-        <h2>Multi-Post Stories</h2>
+        <h3 class="work-title">Multi-Post Stories</h3>
         <ul class="work-cat">
           <li class="cat-title">CANOPY</li>
           <li><span class="division"></span></li>
@@ -86,7 +86,7 @@
     <div class="work">
       <img src="./images/topic-porta.svg" alt="Snapshot of the Tonic Project, 2015" class="work-image">
       <div class="work-card">
-        <h2>Tonic</h2>
+        <h3 class="work-title">Tonic</h3>
         <ul class="work-cat">
           <li class="cat-title">CANOPY</li>
           <li><span class="division"></span></li>
@@ -109,7 +109,7 @@
     <div class="work">
       <img src="./images/mul-stories-porta.svg" alt="Snapshot of the Multi Post Stories Project, 2015" class="work-image">
       <div class="work-card">
-        <h2>Multi-Post Stories</h2>
+        <h3 class="work-title">Multi-Post Stories</h3>
         <ul class="work-cat">
           <li class="cat-title">CANOPY</li>
           <li><span class="division"></span></li>
@@ -132,7 +132,7 @@
   </section>
   <section class="about-contact">
     <section class="contact info">
-      <h2>About Myself</h2>
+      <h2 class="section-title">About Myself</h2>
       <p class="description">I'm a software developer! I can help you build a product, 
         feature or website Look through some of my work and experience! If you like what 
         you see and have a project you need coded, don't hesitate to contact me.
@@ -160,8 +160,29 @@
         <li><div class="skill"><span>Skills</span><span class="arrow"></span></div></li>
       </ul> 
     </section>
-    <section class="contact-container">
-
+    <section class="contact-container info">
+      <h2 class="section-title">Contact me</h2>
+      <p class="description">I'm a software developer! I can help you build a product, 
+        feature or website Look through some of my work and experience! If you like what 
+        you see and have a project you need coded, don't hesitate to contact me.
+      </p>
+      <form action='' method='get' class='contact-form' id="contact-form-id">
+        <div class='form-section'>
+          <label for='title'></label>
+          <input id='title' name='title' type='text' placeholder="Lorem Ipsum" required/>
+        </div>
+        <div class='form-section'>
+          <label for='email'></label>
+          <input id='email' name='email' type='email' placeholder='loremipsum@example.com'required/>
+        </div>
+        <div class='form-section'>
+          <label for='descrip'></label>
+          <textarea id='descrip' name='descrip' placeholder="Write your message here..."></textarea>
+        </div>
+        <div class='form-section'>
+          <button type="submit" class="work-btn">Get in touch</button>
+        </div>
+      </form>
     </section>
 
   </section>
