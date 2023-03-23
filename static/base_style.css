@@ -45,12 +45,16 @@ header {
   height: 12px;
 }
 
-.about {
+.info {
   display: flex;
   flex-flow: column;
-  background: url(../images/header-shapes-mobile.svg), url(../images/header-background-mobile.svg);
   gap: 12px;
   padding: 114px 24px;
+}
+
+.intro {
+  background: url(../images/header-shapes-mobile.svg), url(../images/header-background-mobile.svg);
+  background-size: cover;
 }
 
 .socialmedia-btn-container {
@@ -114,13 +118,13 @@ header {
     line-height: 111%;
   }
 
-  .about {
+  .info {
     padding: 114px 6.4vw;
     margin-inline: auto;
     align-items: flex-start;
   }
 
-  .about h1 {
+  .info h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -131,7 +135,7 @@ header {
     order: 0;
   }
 
-  .about .description {
+  .info .description {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -143,7 +147,7 @@ header {
     order: 1;
   }
 
-  .about .makeconection {
+  .info .makeconection {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -156,7 +160,7 @@ header {
     order: 2;
   }
 
-  .about .socialmedia-btn-row {
+  .info .socialmedia-btn-row {
     margin-inline: auto;
     min-width: 327px;
     width: 87.2vw;
