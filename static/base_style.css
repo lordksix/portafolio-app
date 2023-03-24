@@ -297,10 +297,20 @@ header {
   height: 48px;
 }
 
+.background {
+  float: right;
+}
+
+.bg-half {
+  width: 50vw;
+  height: 100%;
+}
+
 .about-contact .contact-container {
-  background-image: url(../images/Contact-me.png);
-  background-size: cover;
+  background-image: url(../images/contact-form-shapes-mobile.svg), url(../images/Contact-me.svg);
+  background-size: 60% 100%, cover;
   background-repeat: no-repeat;
+  background-position: right top, left;
 }
 
 .contact-container .section-title {
@@ -319,7 +329,7 @@ header {
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
-  padding-block-start: 52px;
+  padding-block-start: 40px;
 }
 
 .form-section input[type='text'],
