@@ -325,7 +325,26 @@ header {
   gap: 12px;
 }
 
-@media only screen and (min-width: 375px) {
+.contact-info {
+  background-image: url(../images/contact-form-shapes-mobile.svg), url(../images/Contact-me.svg);
+  background-size: 60% 100%, cover;
+  background-repeat: no-repeat;
+  background-position: right top;
+  text-align: center;
+}
+
+.contact-info .section-title {
+  text-align: center;
+  color: #fff;
+}
+
+.contact-info .description {
+  font-weight: 400;
+  text-align: center;
+  color: #ebebff;
+}
+
+ @media only screen and (min-width: 375px) {
   .nav-header {
     min-width: 375px;
     height: 48px;
