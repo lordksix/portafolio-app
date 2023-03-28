@@ -254,7 +254,6 @@ header {
 .about-contact {
   background: url(../images/Base-about-my-self.svg) no-repeat;
   background-size: cover;
-  max-width: 100vw;
 }
 
 .skill {
@@ -329,8 +328,7 @@ header {
   background-image: url(../images/contact-form-shapes-mobile.svg), url(../images/Contact-me.svg);
   background-size: 60% 100%, cover;
   background-repeat: no-repeat;
-  background-position: right top;
-  text-align: center;
+  background-position: right top, left;
 }
 
 .contact-info .section-title {
