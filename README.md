@@ -51,15 +51,15 @@
 ### Key Features <a name="key-features"></a>
 
 - **Portfolio webpage**
-- **Mobile first**
-- **Responsiveness and flexibility**
+- **Mobile first development**
+- **Responsiveness and flexibility for any screen size**
 - **Fast access to social media and other ways of contact**
 - **Easy to the eyes and cultivating at the same time**
 - **Form with backend support**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-There is no live demo available.
+YOu can find a live demo in [HERE](https://lordksix.github.io/portafolio-app/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,9 +125,8 @@ To deploy this project, use any web hosting service.
 ## 🔭 Future Features <a name="future-features"></a>
 
 Future chaves:
-- Add layout for bigger screen sizes.
-- Improve responsiveness to bigger screen sizes
-- Add small CSS animations and interactivity.
+- Add small CSS animations and CSS interactivity.
+- Add DOM manipulation for interactivity.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
