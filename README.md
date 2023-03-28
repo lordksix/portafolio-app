@@ -28,9 +28,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Portafolio] <a name="about-project"></a>
+# 📖 [Portfolio] <a name="about-project"></a>
 
-**Portafolio Web App** is a project to showcare different works and information about the a person or group.
+**Portfolio Web App** is a project to showcare different works and information about the a person or group.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -50,11 +50,12 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Portafolio webpage**
+- **Portfolio webpage**
 - **Mobile first**
 - **Responsiveness and flexibility**
 - **Fast access to social media and other ways of contact**
 - **Easy to the eyes and cultivating at the same time**
+- **Form with backend support**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -124,7 +125,7 @@ To deploy this project, use any web hosting service.
 ## 🔭 Future Features <a name="future-features"></a>
 
 Future chaves:
-- Add more detail to contact form
+- Add layout for bigger screen sizes.
 - Improve responsiveness to bigger screen sizes
 - Add small CSS animations and interactivity.
 
