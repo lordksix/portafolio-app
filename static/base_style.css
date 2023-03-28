@@ -88,6 +88,7 @@ header {
   height: 20px;
   width: 20px;
   border: 0;
+  transition: 0.3s ease;
 }
 
 .social-btn:hover {
@@ -178,6 +179,7 @@ header {
   font-size: 17px;
   line-height: 141%;
   letter-spacing: 0.03em;
+  transition: 0.3s ease;
 }
 
 .work-card .work-btn {
@@ -297,10 +299,12 @@ header {
   max-width: 303px;
   cursor: pointer;
   border-bottom: 0;
+  transition: 0.3s ease;
 }
 
 .sub-skill:hover {
   background-color: #bbbbbd;
+  transition: 0.3s ease;
 }
 
 .sub-skill img {
@@ -350,18 +354,20 @@ header {
   flex-direction: column;
   align-items: start;
   gap: 20px;
+  width: 100%;
 }
 
 .form-section input,
 .form-section textarea {
   display: block;
-  width: 87vw;
+  width: min(87vw, 100%);
   padding: 15px 16px;
   border-radius: 8px;
   border: 1px solid #cfd8dc;
   font-size: 17px;
   line-height: 118%;
   height: 48px;
+  max-width: 481px;
 }
 
 .form-section textarea {
@@ -410,7 +416,7 @@ header {
     vertical-align: top;
     min-width: 327px;
     width: 87.2vw;
-    max-width: 750px;
+    max-width: min(750px, 100%);
   }
 
   .makeconection {
@@ -452,13 +458,221 @@ header {
     line-height: 120%;
   }
 
+  .contact-info {
+    align-items: center;
+  }
+
   .contact-info .section-title {
     font-size: 40px;
     line-height: 52px;
+    text-align: center;
   }
 
   .contact-info .description {
     font-size: 20px;
     line-height: 28px;
+    text-align: center;
+    max-width: 569px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-header {
+    width: clamp(100%, (1440px - 100vw) * 1000, 75%);
+    padding-inline: clamp(min(10.77vw, 155px), (1440px - 100vw) * 1000, 155px);
+    height: clamp(26px * 2 + max(18px, 1.25vw) * 1.11, (1440px - 100vw) * 1000, 1.801vw * 2 + max(18px, 1.25vw) * 1.11);
+  }
+
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    gap: 32px;
+  }
+
+  .menu_hamburger {
+    display: none;
+  }
+
+  .intro {
+    --olpbig: var(--p);
+    --pbig: 18.056vw;
+    --w: 920px + var(--pbig) * 2;
+    --cbig: (100vw - var(--w));
+    --bpbig: clamp(var(--p), var(--cbig) * 1000, min(19.93vw, 287px));
+
+    background: url(../images/header-shapes-big.svg), url(../images/header-background-big.svg);
+    background-size: 97.04% 85.48%, cover;
+    background-repeat: no-repeat;
+    background-position: right top, bottom left;
+    padding: var(--bpbig) clamp(var(--olpbig), var(--cbig) * 1000, var(--pbig));
+  }
+
+  .section-title {
+    font-size: max(48px, 3.34vw);
+    line-height: 125%;
+  }
+
+  .description {
+    font-size: max(20px, 1.389vw);
+    line-height: 140%;
+  }
+
+  .makeconection {
+    font-size: max(16px, 1.11vw);
+    line-height: 140%;
+  }
+
+  .social-btn {
+    height: max(20px, 1.39vw);
+    width: max(20px, 1.39vw);
+  }
+
+  #btn-m {
+    height: max(16px, 1.112vw);
+  }
+
+  #btn-gh {
+    width: max(18px, 1.25vw);
+  }
+
+  #btn-pc {
+    width: max(14.17px, 0.984vw);
+  }
+
+  .logo {
+    font-size: max(18px, 1.25vw);
+  }
+
+  .works {
+    --w: 1920px;
+    --n: 1;
+
+    grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(var(--n) + 1) + 0.1%, (var(--w) - 100vw) * 1000, 100%), 1fr));
+    padding: 142px 142px;
+    display: grid;
+    column-gap: 24px;
+    row-gap: 88px;
+    justify-content: center;
+  }
+
+  .work {
+    padding: 24px;
+    gap: 22px;
+    align-items: center;
+    border: 0.1px solid #dfe1e6;
+    border-radius: 24px;
+    background-color: #fff;
+    flex-flow: row;
+    flex-grow: 0;
+    width: calc(100vw - 284px);
+  }
+
+  .works img {
+    width: calc(50%);
+    height: auto;
+  }
+
+  .work:nth-child(even) .work-card {
+    order: -1;
+  }
+
+  .work-card {
+    width: calc(50%);
+    padding: 24px;
+    gap: clamp(24px, (1300px - 100vw) * 1000, 0px);
+  }
+
+  .work-title {
+    font-size: max(40px, 2.78vw);
+    line-height: 130%;
+  }
+
+  .work-descrip {
+    width: 91.51%;
+    font-size: max(16px, 1.1vw);
+    line-height: 150%;
+  }
+
+  .cat-title,
+  .cat-descrip {
+    font-size: max(18px, 1.25vw);
+    line-height: 133%;
+  }
+
+  .work-lang span {
+    font-size: max(12px, 0.833vw);
+  }
+
+  .about.info {
+    flex-flow: row;
+    padding: 142px clamp(142px, (100vw -1440px) * 1000, 9.86vw);
+    gap: 24px;
+  }
+
+  .contact {
+    width: 31.04vw;
+  }
+
+  .skills {
+    width: 47.5vw;
+  }
+
+  .skill {
+    width: 47.5vw;
+    max-width: 684px;
+  }
+
+  .contact-info {
+    background-image: url(../images/contact-form-shapes-desktop.svg), url(../images/contact-me-desktop.svg);
+    background-size: 89.63% 85%, cover;
+    background-repeat: no-repeat;
+    background-position: center, top left;
+    padding-block: 142px;
+  }
+
+  .contact .section-title {
+    font-size: max(40px, 2.78vw);
+    line-height: 130%;
+    min-width: 0;
+  }
+
+  .contact .description {
+    font-size: max(16px, 1.11vw);
+    line-height: 150%;
+    min-width: 0;
+    width: 100%;
+  }
+
+  .sub-skills {
+    display: flex;
+    flex-flow: wrap;
+    gap: 12px;
+    width: 46vw;
+    max-width: 662px;
+  }
+
+  .sub-skill {
+    flex-flow: column;
+    width: 122px;
+    height: 120px;
+    margin: 0;
+    align-items: flex-start;
+  }
+  
+  .form-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-section input
+  .form-section textarea {
+    max-width: 447px;
   }
 }
