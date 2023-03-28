@@ -173,15 +173,23 @@
       </ul> 
     </section>
   </section>
-  <section>
-    <h2>Contact me</h2>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
+  <section class="info contact-info">
+    <h2 class="section-title">Contact me</h2>
+    <p class="description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
       I’d love to help with it!</p>
-    <form action="https://formspree.io/f/xgebldzy" method="post">
-      <input type="text" id="name" maxlength="30" placeholder="Lorem Ipsum" >
-      <input type="email" id="email" placeholder="loremipsum@gmail.com">
-      <textarea name="" id="" cols="30" rows="10" maxlength="500" placeholder=" Write your message here..."></textarea>
-      <button class="work-btn" type="submit">Get in touch</button>
+    <form action="https://formspree.io/f/xgebldzy" method="post" id="contact-form">
+      <div class="form-section">
+        <input type="text" id="name" maxlength="30" placeholder="Lorem Ipsum" required>
+      </div>
+      <div class="form-section">
+        <input type="email" id="email" placeholder="loremipsum@gmail.com" required>
+      </div>
+      <div class="form-section">
+        <textarea name="contact-descrip" id="contact-descrip" cols="30" rows="10" maxlength="500" placeholder=" Write your message here..." required></textarea>
+      </div>
+      <div class="form-section">
+        <button class="work-btn" type="submit">Get in touch</button>
+      </div>
     </form>
   </section>
 
