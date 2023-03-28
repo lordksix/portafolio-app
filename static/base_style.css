@@ -161,7 +161,10 @@ header {
 }
 
 .work-card li {
-  display: inline-block;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .work-btn {
@@ -191,6 +194,13 @@ header {
   display: inline-block;
   width: 8px;
   height: 8px;
+}
+
+.work-cat {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .cat-title {
@@ -475,6 +485,7 @@ header {
     max-width: 569px;
   }
 }
+
 @media only screen and (min-width: 768px) {
   header {
     display: flex;
@@ -578,14 +589,14 @@ header {
     height: auto;
   }
 
-  .work:nth-child(even) .work-card {
-    order: -1;
-  }
-
   .work-card {
     width: calc(50%);
     padding: 24px;
     gap: clamp(24px, (1300px - 100vw) * 1000, 0px);
+  }
+
+  .work:nth-child(even) .work-card {
+    order: -1;
   }
 
   .work-title {
@@ -664,14 +675,14 @@ header {
     margin: 0;
     align-items: flex-start;
   }
-  
+
   .form-section {
     width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .form-section input
+  .form-section input,
   .form-section textarea {
     max-width: 447px;
   }
