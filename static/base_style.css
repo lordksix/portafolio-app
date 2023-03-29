@@ -360,7 +360,8 @@ header {
   padding-bottom: 52px;
 }
 
-#contact-form {
+#contact-form,
+.contact-form-group {
   display: flex;
   flex-direction: column;
   align-items: start;
