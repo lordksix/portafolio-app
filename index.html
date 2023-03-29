@@ -20,9 +20,9 @@
         <input type="checkbox" id="menu_toggle" />
         <label for="menu_toggle" class="menu_hamburger"></label>
         <div class="menu">
-          <li><a href="#works"></a>Portfolio</li>
-          <li><a href="#about"></a>About</li>
-          <li><a href="#contact-form"></a>Contact</li>
+          <li><a href="#works">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact-form">Contact</a></li>
         </div>
       </ul>
     </nav>
@@ -47,7 +47,7 @@
   <section id="works">
     <ul class="works">
       <li class="work">
-        <img src="./images/topic-porta.svg" alt="Snapshot of the Tonic Project, 2015" class="work-image">
+        <img src="./images/Snapshoot-Portfolio.svg" alt="Snapshot of the Tonic Project, 2015" class="work-image">
         <div class="work-card">
           <h3 class="work-title">Tonic</h3>
           <ul class="work-cat">
@@ -70,18 +70,17 @@
         </div>
       </li>
       <li class="work">
-        <img src="./images/mul-stories-porta.svg" alt="Snapshot of the Multi Post Stories Project, 2015" class="work-image">
+        <img src="./images/Snapshoot-multi.svg" alt="Snapshot of the Multi Post Stories Project, 2015" class="work-image">
         <div class="work-card">
           <h3 class="work-title">Multi-Post Stories</h3>
           <ul class="work-cat">
-            <li class="cat-title">CANOPY</li>
+            <li class="cat-title">Facebook</li>
             <li><span class="division"></span></li>
-            <li class="cat-descrip">Back End Dev</li>
+            <li class="cat-descrip">Full Stack Dev</li>
             <li><span class="division"></span></li>
             <li class="cat-descrip">2015</li>
           </ul>
-          <p class="work-descrip">A daily selection of privately personalized reads; no accounts 
-            or sign-ups required.</p>
+          <p class="work-descrip">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
           <ul class="work-langs">
             <li class="work-lang"><span>HTML</span></li>
             <li class="work-lang"><span>CSS</span></li>
@@ -93,18 +92,17 @@
         </div>      
       </li>
       <li class="work">
-        <img src="./images/topic-porta.svg" alt="Snapshot of the Tonic Project, 2015" class="work-image">
+        <img src="./images/topic-porta.svg" alt="Snapshot of the Facebook 360, 2015" class="work-image">
         <div class="work-card">
-          <h3 class="work-title">Tonic</h3>
+          <h3 class="work-title">Facebook 360</h3>
           <ul class="work-cat">
-            <li class="cat-title">CANOPY</li>
+            <li class="cat-title">Facebook</li>
             <li><span class="division"></span></li>
-            <li class="cat-descrip">Back End Dev</li>
+            <li class="cat-descrip">Full Stack Dev</li>
             <li><span class="division"></span></li>
             <li class="cat-descrip">2015</li>
           </ul>
-          <p class="work-descrip">A daily selection of privately personalized reads; no accounts 
-            or sign-ups required.</p>
+          <p class="work-descrip">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
           <ul class="work-langs">
             <li class="work-lang"><span>HTML</span></li>
             <li class="work-lang"><span>CSS</span></li>
@@ -116,20 +114,20 @@
         </div>
       </li>
       <li class="work">
-        <img src="./images/mul-stories-porta.svg" alt="Snapshot of the Multi Post Stories Project, 2015" class="work-image">
+        <img src="./images/mul-stories-porta.svg" alt="Snapshot of the Uber Navigation Project, 2018" class="work-image">
         <div class="work-card">
-          <h3 class="work-title">Multi-Post Stories</h3>
+          <h3 class="work-title">Uber Navigation</h3>
           <ul class="work-cat">
-            <li class="cat-title">CANOPY</li>
+            <li class="cat-title">Uber</li>
             <li><span class="division"></span></li>
-            <li class="cat-descrip">Back End Dev</li>
+            <li class="cat-descrip">Lead Developer</li>
             <li><span class="division"></span></li>
-            <li class="cat-descrip">2015</li>
+            <li class="cat-descrip">2018</li>
           </ul>
-          <p class="work-descrip">A daily selection of privately personalized reads; no accounts 
-            or sign-ups required.</p>
+          <p class="work-descrip">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
           <ul class="work-langs">
             <li class="work-lang"><span>HTML</span></li>
+            <li class="work-lang"><span>Ruby on Rails</span></li>
             <li class="work-lang"><span>CSS</span></li>
             <li class="work-lang"><span>JavaScript</span></li>
           </ul>
@@ -177,18 +175,20 @@
       <p class="description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
         I'd love to help with it!</p>
       <form action="https://formspree.io/f/xgebldzy" method="post" id="contact-form">
-        <div class="form-section">
-          <input type="text" id="name" maxlength="30" placeholder="Name" required>
-        </div>
-        <div class="form-section">
-          <input type="email" id="email" placeholder="E-mail" required>
-        </div>
-        <div class="form-section">
-          <textarea name="contact-descrip" id="contact-descrip" cols="30" rows="10" maxlength="500" placeholder=" Write your message here..." required></textarea>
-        </div>
-        <div class="form-section">
-          <button class="work-btn" type="submit">Get in touch</button>
-        </div>
+        <ul class="contact-form-group">
+          <li class="form-section">
+            <input type="text" id="name" maxlength="30" placeholder="Name" required>
+          </li>
+          <li class="form-section">
+            <input type="email" id="email" placeholder="E-mail" required>
+          </li>
+          <li class="form-section">
+            <textarea name="contact-descrip" id="contact-descrip" maxlength="500" placeholder=" Write your message here..." required></textarea>
+          </li>
+          <li class="form-section">
+            <button class="work-btn" type="submit">Get in touch</button>
+          </li>
+        </ul>
       </form>
     </section>
   </section>
