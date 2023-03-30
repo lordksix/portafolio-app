@@ -283,6 +283,20 @@ header {
   background-size: cover;
 }
 
+.menu-item-checkbox,
+.sub-skills {
+  display: none;
+  transition: 0.3s ease;
+}
+
+.arrow {
+  width: 8px;
+  height: 14px;
+  display: inline-block;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
 .skill {
   display: flex;
   justify-content: space-between;
@@ -293,22 +307,24 @@ header {
   padding-inline: 12px 40px;
   align-items: center;
   border-bottom: 1px solid #dfe1e6;
+  transition: border-bottom 0.3s ease;
   cursor: pointer;
 }
 
-.arrow {
-  background: url(../images/arrow.svg) no-repeat;
-  display: inline-block;
-  width: 8px;
-  height: 14px;
-}
-
-.skill-active {
+.menu-item-checkbox:checked ~ .skill {
   border-bottom: 0;
+  transition: border-bottom 0.3s ease;
 }
 
-.arrow-active {
+.menu-item-checkbox:checked ~ .skill .arrow {
   transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.menu-item-checkbox:checked ~ .sub-skills {
+  display: block;
+  padding-block-start: 16px;
+  transition: 0.3s ease;
 }
 
 .sub-skill {
@@ -323,8 +339,8 @@ header {
   border-radius: 8px;
   max-width: 303px;
   cursor: pointer;
-  border-bottom: 0;
   transition: 0.3s ease;
+
 }
 
 .sub-skill:hover {
@@ -641,8 +657,8 @@ header {
     gap: clamp(24px, (1300px - 100vw) * 1000, 0px);
   }
 
-  .work:nth-child(even) .work-card {
-    order: -1;
+  .work:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
   .work:nth-child(even) .work-btn {
@@ -724,12 +740,13 @@ header {
     width: 100%;
   }
 
-  .sub-skills {
+  .menu-item-checkbox:checked ~ .sub-skills {
     display: flex;
     flex-flow: wrap;
     gap: 12px;
     width: 46vw;
     max-width: 662px;
+    transition: 0.3s ease;
   }
 
   .sub-skill {
