@@ -364,9 +364,15 @@ header {
 .contact-form-group {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 20px;
-  width: 100%;
+  width: min(87vw, 100%);
+}
+
+.form-section {
+  width: min(87vw, 100%);
+  display: flex;
+  justify-content: center;
 }
 
 .form-section input,
