@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h3><b>Porfatolio Web App</b></h3>
+  <h3><b>Portfolio Web App</b></h3>
 
 </div>
 
