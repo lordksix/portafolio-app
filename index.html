@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./static/base_style.css">
-  <title>Portafolio</title>
+  <title>Portfolio Template</title>
 </head>
 <body> 
   <header>
@@ -18,17 +18,17 @@
       </div>
       <ul class="nav-menu">
         <input type="checkbox" id="menu_toggle" />
-        <label for="menu_toggle" class="menu_hamburger"></label>
+        <label for="menu_toggle" class="menu_hamburger"><img src="./images/Union.svg" alt="Menu"></label>
         <div class="menu">
           <li><a href="#works">Portfolio</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact-form">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </div>
       </ul>
     </nav>
   </header>
   <section class="intro info">
-    <h2 class="section-title">I'm Alexandra. <br> Glad to see you!</h2>
+    <h1 class="section-title">I'm Alexandra. <br> Glad to see you!</h2>
     <p class="description">I'm a software developer! I can help you build a product, 
       feature or website Look through some of my work and experience! If you like what 
       you see and have a project you need coded, don't hesitate to contact me.
@@ -36,25 +36,43 @@
     <p class="makeconection">LET'S CONNECT</p>
     <div class="socialmedia-btn-container">
       <ul class="socialmedia-btn-row">
-        <li class="social-btn"><a href="https://twitter.com/"><i class="social-btn" id="btn-tw"></i></a></li>
-        <li class="social-btn"><a href="https://www.linkedin.com/"><i class="social-btn" id="btn-in"></i></a></li>
-        <li class="social-btn"><a href="#"><i class="social-btn" id="btn-m"></i></a></li>
-        <li class="social-btn"><a href="https://github.com/"><i class="social-btn" id="btn-gh"></i></a></li>
-        <li class="social-btn"><a href="#"><i class="social-btn" id="btn-pc"></i></a></li>
+        <li class="social-btn">
+          <a href="https://twitter.com/">
+            <img src="./images/twicon.svg" alt="Twitter Account" class="social-btn" id="btn-tw">
+          </a>
+        </li>
+        <li class="social-btn">
+          <a href="https://www.linkedin.com/">
+            <img src="./images/Linkedin-icon.svg" alt="LinkedIn Account" class="social-btn" id="btn-in">
+          </a>
+        </li>
+        <li class="social-btn">
+          <a href="#">
+            <img src="./images/micon.svg" alt="Medium Account" class="social-btn" id="btn-m">
+          </a>
+        </li>
+        <li class="social-btn">
+          <a href="https://github.com/">
+            <img src="./images/githubicon.svg" alt="GitHub Account" class="social-btn" id="btn-gh">
+          </a>
+        </li>
+        <li class="social-btn">
+          <a href="#">
+            <img src="./images/peaceicon.svg" alt="Wellfound Account" class="social-btn" id="btn-pc">
+          </a>
+        </li>
      </ul>
     </div>
   </section>
   <section id="works">
     <ul class="works">
       <li class="work">
-        <img src="./images/Snapshoot-Portfolio.svg" alt="Snapshot of the Tonic Project, 2015" class="work-image">
+        <img src="./images/Snapshoot-Portfolio.svg" alt="Tonic Project, 2015" class="work-image">
         <div class="work-card">
-          <h3 class="work-title">Tonic</h3>
+          <h2 class="work-title">Tonic</h2>
           <ul class="work-cat">
             <li class="cat-title">CANOPY</li>
-            <li><span class="division"></span></li>
             <li class="cat-descrip">Back End Dev</li>
-            <li><span class="division"></span></li>
             <li class="cat-descrip">2015</li>
           </ul>
           <p class="work-descrip">A daily selection of privately personalized reads; no accounts 
@@ -70,14 +88,12 @@
         </div>
       </li>
       <li class="work">
-        <img src="./images/Snapshoot-multi.svg" alt="Snapshot of the Multi Post Stories Project, 2015" class="work-image">
+        <img src="./images/Snapshoot-multi.svg" alt="Multi Post Stories Project, 2015" class="work-image">
         <div class="work-card">
-          <h3 class="work-title">Multi-Post Stories</h3>
+          <h2 class="work-title">Multi-Post Stories</h2>
           <ul class="work-cat">
             <li class="cat-title">Facebook</li>
-            <li><span class="division"></span></li>
             <li class="cat-descrip">Full Stack Dev</li>
-            <li><span class="division"></span></li>
             <li class="cat-descrip">2015</li>
           </ul>
           <p class="work-descrip">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
@@ -92,14 +108,12 @@
         </div>      
       </li>
       <li class="work">
-        <img src="./images/topic-porta.svg" alt="Snapshot of the Facebook 360, 2015" class="work-image">
+        <img src="./images/topic-porta.svg" alt="Facebook 360, 2015" class="work-image">
         <div class="work-card">
-          <h3 class="work-title">Facebook 360</h3>
+          <h2 class="work-title">Facebook 360</h2>
           <ul class="work-cat">
             <li class="cat-title">Facebook</li>
-            <li><span class="division"></span></li>
             <li class="cat-descrip">Full Stack Dev</li>
-            <li><span class="division"></span></li>
             <li class="cat-descrip">2015</li>
           </ul>
           <p class="work-descrip">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
@@ -114,14 +128,12 @@
         </div>
       </li>
       <li class="work">
-        <img src="./images/mul-stories-porta.svg" alt="Snapshot of the Uber Navigation Project, 2018" class="work-image">
+        <img src="./images/mul-stories-porta.svg" alt="Uber Navigation Project, 2018" class="work-image">
         <div class="work-card">
-          <h3 class="work-title">Uber Navigation</h3>
+          <h2 class="work-title">Uber Navigation</h2>
           <ul class="work-cat">
             <li class="cat-title">Uber</li>
-            <li><span class="division"></span></li>
             <li class="cat-descrip">Lead Developer</li>
-            <li><span class="division"></span></li>
             <li class="cat-descrip">2018</li>
           </ul>
           <p class="work-descrip">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
@@ -149,18 +161,38 @@
         <p class="makeconection">LET'S CONNECT</p>
         <div class="socialmedia-btn-container">
           <ul class="socialmedia-btn-row">
-            <li class="social-btn"><a href="https://github.com/"><i class="social-btn" id="btn-gh"></i></a></li>
-            <li class="social-btn"><a href="https://www.linkedin.com/"><i class="social-btn" id="btn-in"></i></a></li>
-            <li class="social-btn"><a href="#"><i class="social-btn" id="btn-m"></i></a></li>
-            <li class="social-btn"><a href="https://twitter.com/"><i class="social-btn" id="btn-tw"></i></a></li>
-            <li class="social-btn"><a href="#"><i class="social-btn" id="btn-pc"></i></a></li>
+            <li class="social-btn">
+              <a href="https://twitter.com/">
+                <img src="./images/twicon.svg" alt="Twitter Account" class="social-btn" id="btn-tw">
+              </a>
+            </li>
+            <li class="social-btn">
+              <a href="https://www.linkedin.com/">
+                <img src="./images/Linkedin-icon.svg" alt="LinkedIn Account" class="social-btn" id="btn-in">
+              </a>
+            </li>
+            <li class="social-btn">
+              <a href="#">
+                <img src="./images/micon.svg" alt="Medium Account" class="social-btn" id="btn-m">
+              </a>
+            </li>
+            <li class="social-btn">
+              <a href="https://github.com/">
+                <img src="./images/githubicon.svg" alt="GitHub Account" class="social-btn" id="btn-gh">
+              </a>
+            </li>
+            <li class="social-btn">
+              <a href="#">
+                <img src="./images/peaceicon.svg" alt="Wellfound Account" class="social-btn" id="btn-pc">
+              </a>
+            </li>
         </ul>
         </div>
         <button type="button" class="work-btn">Get my resume</button>
       </div>
       <ul class="skills">
         <li>
-          <label for="languages" class="skill"><span>Languages</span><img src="./images/arrow.svg" alt="Clock to open languages" class="arrow"></label>
+          <label for="languages" class="skill"><span>Languages</span><img src="./images/arrow.svg" alt="Click to open languages" class="arrow"></label>
 					<input type="checkbox" id="languages" class="menu-item-checkbox"/>
           <ul class="sub-skills">
             <li class="sub-skill"><img src="images/js-icon.svg" alt="JavaScript Icon"></span><span>JavaScript</span></li>
@@ -171,7 +203,7 @@
         <li>
           <label for="frameworks" class="skill">
             <span>Frameworks</span>
-            <img src="./images/arrow.svg" alt="Clock to open frameworks" class="arrow">
+            <img src="./images/arrow.svg" alt="Click to open frameworks" class="arrow">
           </label>
 					<input type="checkbox" id="frameworks" class="menu-item-checkbox"/>
           <ul class="sub-skills">
@@ -181,7 +213,7 @@
           </ul>
         </li>
         <li>
-          <label for="skills" class="skill"><span>Skills</span><img src="./images/arrow.svg" alt="Clock to open skills" class="arrow"></label>
+          <label for="skills" class="skill"><span>Skills</span><img src="./images/arrow.svg" alt="Click to open skills" class="arrow"></label>
 					<input type="checkbox" id="skills" class="menu-item-checkbox" />
           <ul class="sub-skills">
             <li class="sub-skill"><img src="images/js-icon.svg" alt="JavaScript Icon"></span><span>JavaScript</span></li>
@@ -192,18 +224,21 @@
       </ul> 
     </section>
     <section class="info contact-info">
-      <h2 class="section-title">Contact me</h2>
+      <h2 class="section-title" id="contact">Contact me</h2>
       <p class="description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
         I'd love to help with it!</p>
       <form action="https://formspree.io/f/xgebldzy" method="post" id="contact-form">
         <ul class="contact-form-group">
           <li class="form-section">
+            <label for="name">Name</label>
             <input type="text" id="name" maxlength="30" placeholder="Name" required>
           </li>
           <li class="form-section">
+            <label for="email">E-mail</label>
             <input type="email" id="email" placeholder="E-mail" required>
           </li>
           <li class="form-section">
+            <label for="contact-descrip">Message</label>
             <textarea name="contact-descrip" id="contact-descrip" maxlength="500" placeholder=" Write your message here..." required></textarea>
           </li>
           <li class="form-section">
