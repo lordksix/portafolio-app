@@ -14,7 +14,7 @@
   <header>
     <nav class="nav-header">
       <div class="logo">
-        <a href="#">My Logo</a>
+        <a href="#intro">My Logo</a>
       </div>
       <ul class="nav-menu">
         <input type="checkbox" id="menu_toggle" />
@@ -27,7 +27,7 @@
       </ul>
     </nav>
   </header>
-  <section class="intro info">
+  <section class="intro info" id="intro">
     <h1 class="section-title">I'm Alexandra. <br> Glad to see you!</h2>
     <p class="description">I'm a software developer! I can help you build a product, 
       feature or website Look through some of my work and experience! If you like what 
@@ -192,39 +192,39 @@
       </div>
       <ul class="skills">
         <li>
-          <label for="languages" class="skill"><span>Languages</span><img src="./images/arrow.svg" alt="Click to open languages" class="arrow"></label>
 					<input type="checkbox" id="languages" class="menu-item-checkbox"/>
+          <label for="languages" class="skill"><span>Languages</span><img src="./images/arrow.svg" alt="Click to open languages" class="arrow"></label>
           <ul class="sub-skills">
-            <li class="sub-skill"><img src="images/js-icon.svg" alt="JavaScript Icon"></span><span>JavaScript</span></li>
-            <li class="sub-skill"><img src="images/html5-icon.svg" alt="HTML Icon"><span>HTML</span></li>
-            <li class="sub-skill"><img src="images/css-icon.svg" alt="CSS3 Icon"><span>CSS</span></li>
+            <li class="sub-skill"><img src="images/js-icon.svg" alt="JavaScript Icon" class="sub-skill-img"></span><span>JavaScript</span></li>
+            <li class="sub-skill"><img src="images/html5-icon.svg" alt="HTML Icon" class="sub-skill-img"><span>HTML</span></li>
+            <li class="sub-skill"><img src="images/css-icon.svg" alt="CSS3 Icon" class="sub-skill-img"><span>CSS</span></li>
           </ul>
         </li>
         <li>
+          <input type="checkbox" id="frameworks" class="menu-item-checkbox"/>
           <label for="frameworks" class="skill">
             <span>Frameworks</span>
             <img src="./images/arrow.svg" alt="Click to open frameworks" class="arrow">
           </label>
-					<input type="checkbox" id="frameworks" class="menu-item-checkbox"/>
           <ul class="sub-skills">
-            <li class="sub-skill"><img src="images/js-icon.svg" alt="JavaScript Icon"></span><span>JavaScript</span></li>
-            <li class="sub-skill"><img src="images/html5-icon.svg" alt="HTML Icon"><span>HTML</span></li>
-            <li class="sub-skill"><img src="images/css-icon.svg" alt="CSS3 Icon"><span>CSS</span></li>
+            <li class="sub-skill"><img src="images/js-icon.svg" alt="JavaScript Icon" class="sub-skill-img"></span><span>JavaScript</span></li>
+            <li class="sub-skill"><img src="images/html5-icon.svg" alt="HTML Icon" class="sub-skill-img"><span>HTML</span></li>
+            <li class="sub-skill"><img src="images/css-icon.svg" alt="CSS3 Icon" class="sub-skill-img"><span>CSS</span></li>
           </ul>
         </li>
         <li>
-          <label for="skills" class="skill"><span>Skills</span><img src="./images/arrow.svg" alt="Click to open skills" class="arrow"></label>
 					<input type="checkbox" id="skills" class="menu-item-checkbox" />
+          <label for="skills" class="skill"><span>Skills</span><img src="./images/arrow.svg" alt="Click to open skills" class="arrow"></label>
           <ul class="sub-skills">
-            <li class="sub-skill"><img src="images/js-icon.svg" alt="JavaScript Icon"></span><span>JavaScript</span></li>
-            <li class="sub-skill"><img src="images/html5-icon.svg" alt="HTML Icon"><span>HTML</span></li>
-            <li class="sub-skill"><img src="images/css-icon.svg" alt="CSS3 Icon"><span>CSS</span></li>
+            <li class="sub-skill"><img src="images/js-icon.svg" alt="JavaScript Icon" class="sub-skill-img"></span><span>JavaScript</span></li>
+            <li class="sub-skill"><img src="images/html5-icon.svg" alt="HTML Icon" class="sub-skill-img"><span>HTML</span></li>
+            <li class="sub-skill"><img src="images/css-icon.svg" alt="CSS3 Icon" class="sub-skill-img"><span>CSS</span></li>
           </ul>
         </li>
       </ul> 
     </section>
-    <section class="info contact-info">
-      <h2 class="section-title" id="contact">Contact me</h2>
+    <section class="info contact-info" id="contact">
+      <h2 class="section-title">Contact me</h2>
       <p class="description">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
         I'd love to help with it!</p>
       <form action="https://formspree.io/f/xgebldzy" method="post" id="contact-form">
