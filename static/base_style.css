@@ -109,27 +109,16 @@ header {
   transition: 0.3s ease;
 }
 
-#btn-tw {
-  background: url(../images/twicon.svg) no-repeat;
-}
-
-#btn-in {
-  background: url(../images/Linkedin-icon.svg) no-repeat;
-}
-
 #btn-m {
   height: 16px;
-  background: url(../images/micon.svg) no-repeat;
 }
 
 #btn-gh {
   width: 18px;
-  background: url(../images/githubicon.svg) no-repeat;
 }
 
 #btn-pc {
   width: 14.17px;
-  background: url(../images/peaceicon.svg) no-repeat;
 }
 
 /* **** Works Section **** */
@@ -198,13 +187,6 @@ header {
   margin-block: 8px;
 }
 
-.division {
-  background: url(../images/Counter.svg);
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-}
-
 .work-cat {
   display: flex;
   gap: 12px;
@@ -220,10 +202,13 @@ header {
 }
 
 .cat-descrip {
+  background: url(../images/Counter.svg) no-repeat;
+  background-position: left center;
   font-weight: 600;
   color: #7a869a;
   font-size: 13px;
   line-height: 123%;
+  padding-left: 16px;
 }
 
 .work-descrip {
@@ -402,6 +387,7 @@ header {
 
 .form-section {
   width: min(87vw, 100%);
+  max-width: 487px;
   display: flex;
   justify-content: center;
 }
@@ -423,6 +409,10 @@ header {
   font-size: 15px;
   line-height: 160%;
   height: 170px;
+}
+
+.form-section:last-child {
+  justify-content: flex-start;
 }
 
 /* **** Media Queries 375px and 768px **** */
@@ -766,6 +756,6 @@ header {
 
   .form-section input,
   .form-section textarea {
-    max-width: 447px;
+    max-width: 487px;
   }
 }
