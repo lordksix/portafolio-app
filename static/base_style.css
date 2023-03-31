@@ -4,6 +4,8 @@
   --font-1: #172b4d;
   --font-2: #6070ff;
   --font-3: #344563;
+  --font-contact-des: #ebebff;
+  --font-form-label: #7d7c84;
 }
 
 * {
@@ -226,7 +228,7 @@ header {
 
 .work-lang {
   padding: 4px 12px;
-  background: #ebebff;
+  background: var(--font-contact-des);
   border-radius: 8px;
 }
 
@@ -371,7 +373,7 @@ header {
 .contact-info .description {
   font-weight: 400;
   text-align: center;
-  color: #ebebff;
+  color: var(--font-contact-des);
   padding-bottom: 52px;
 }
 
@@ -388,7 +390,8 @@ header {
   width: min(87vw, 100%);
   max-width: 487px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .form-section input,
@@ -412,6 +415,12 @@ header {
 
 .form-section:last-child {
   justify-content: flex-start;
+}
+
+.form-section label {
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--font-contact-des);
 }
 
 /* **** Media Queries 375px and 768px **** */
@@ -756,5 +765,9 @@ header {
   .form-section input,
   .form-section textarea {
     max-width: 487px;
+  }
+
+  .form-section label {
+    font-size: 16px;
   }
 }
