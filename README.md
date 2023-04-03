@@ -59,7 +59,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-YOu can find a live demo in [HERE](https://lordksix.github.io/portafolio-app/).
+You can find a live demo in [HERE](https://lordksix.github.io/portafolio-app/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -110,6 +110,10 @@ There are no test available for this project.
 ### Deployment
 
 To deploy this project, use any web hosting service.
+
+This project is deployed using [GitHub Pages](https://pages.github.com/). 
+
+Go to [🚀 Live Demo](#live-demo) to check it out.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
