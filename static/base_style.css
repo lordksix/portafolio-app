@@ -2,7 +2,7 @@
 
 :root {
   --font-1: #172b4d;
-  --font-2: #6070ff;
+  --font-2: #1e488f;
   --font-3: #344563;
   --font-contact-des: #ebebff;
   --font-form-label: #7d7c84;
@@ -196,7 +196,7 @@ header {
 .work-btn {
   color: var(--btn-color);
   background-color: var(--bckgrd);
-  border: 1px solid var(--connect);
+  border: 1px solid var(--font-2);
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -234,7 +234,7 @@ header {
   background: url(../images/Counter.svg) no-repeat;
   background-position: left center;
   font-weight: 600;
-  color: var(--font-form-label);
+  color: var(--font-3);
   font-size: 13px;
   line-height: 123%;
   padding-left: 16px;
@@ -256,13 +256,13 @@ header {
 
 .work-lang {
   padding: 4px 12px;
-  background: var(--font-contact-des);
+  background: var(--connect);
   border-radius: 8px;
 }
 
 .work-lang span {
   font-weight: 500;
-  color: var(--font-2);
+  color: var(black);
   font-size: 12px;
   line-height: 133%;
 }
@@ -407,7 +407,7 @@ header {
 
 .contact-info .section-title {
   text-align: center;
-  color: var(--bckgrd);
+  color: var(black);
   padding-bottom: 12px;
   font-weight: 700;
 }
@@ -415,7 +415,7 @@ header {
 .contact-info .description {
   font-weight: 400;
   text-align: center;
-  color: var(--font-contact-des);
+  color: var(black);
   padding-bottom: 52px;
 }
 
@@ -462,7 +462,7 @@ header {
 .form-section label {
   font-size: 14px;
   line-height: 150%;
-  color: var(--font-contact-des);
+  color: var(black);
 }
 
 /* **** Media Queries 375px and 768px **** */
@@ -530,7 +530,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    color: var(--connect);
+    color: var(--font-2);
     text-align: left;
     vertical-align: top;
     min-width: 327px;
