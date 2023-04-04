@@ -262,7 +262,7 @@ header {
 
 .work-lang span {
   font-weight: 500;
-  color: var(--font-2);
+  color: var(black);
   font-size: 12px;
   line-height: 133%;
 }
@@ -407,7 +407,7 @@ header {
 
 .contact-info .section-title {
   text-align: center;
-  color: var(--bckgrd);
+  color: var(black);
   padding-bottom: 12px;
   font-weight: 700;
 }
