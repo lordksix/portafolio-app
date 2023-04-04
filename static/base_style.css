@@ -415,7 +415,7 @@ header {
 .contact-info .description {
   font-weight: 400;
   text-align: center;
-  color: var(--font-contact-des);
+  color: var(black);
   padding-bottom: 52px;
 }
 
@@ -462,7 +462,7 @@ header {
 .form-section label {
   font-size: 14px;
   line-height: 150%;
-  color: var(--font-contact-des);
+  color: var(black);
 }
 
 /* **** Media Queries 375px and 768px **** */
