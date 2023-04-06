@@ -13,7 +13,7 @@
   --body-bg: #e5e5e5;
   --connect: #7f8cff;
   --letter-bb: #fff;
-  --bg-contact: #5263FF;
+  --bg-contact: #5263ff;
 }
 
 * {
@@ -536,7 +536,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    color: var(--font-2);
+    color: var(--bg-contact);
     text-align: left;
     vertical-align: top;
     min-width: 327px;
