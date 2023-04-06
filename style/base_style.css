@@ -13,6 +13,7 @@
   --body-bg: #e5e5e5;
   --connect: #7f8cff;
   --letter-bb: #fff;
+  --bg-contact: #5263FF;
 }
 
 * {
@@ -410,6 +411,7 @@ header {
 .contact-info .section-title {
   text-align: center;
   color: var(--letter-bb);
+  background-color: var(--bg-contact);
   padding-bottom: 12px;
   font-weight: 700;
 }
@@ -418,6 +420,7 @@ header {
   font-weight: 400;
   text-align: center;
   color: var(--letter-bb);
+  background-color: var(--bg-contact);
   padding-bottom: 52px;
 }
 
@@ -464,7 +467,8 @@ header {
 .form-section label {
   font-size: 14px;
   line-height: 150%;
-  color: var(black);
+  color: var(--letter-bb);
+  background-color: var(--bg-contact);
 }
 
 /* **** Media Queries 375px and 768px **** */
