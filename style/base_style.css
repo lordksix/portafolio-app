@@ -12,6 +12,7 @@
   --border: #dfe1e6;
   --body-bg: #e5e5e5;
   --connect: #7f8cff;
+  --letter-bb: #c0ab00;
 }
 
 * {
@@ -301,7 +302,8 @@ header {
 /* **** About subsection **** */
 
 .about-contact {
-  background: url(../images/Base-about-my-self.svg) no-repeat;
+  background-image: url(../images/Base-about-my-self.svg);
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -637,7 +639,7 @@ header {
     --cbig: (100vw - var(--w));
     --bpbig: clamp(var(--p), var(--cbig) * 1000, min(19.93vw, 287px));
 
-    background: url(../images/header-shapes-big.svg), url(../images/header-background-big.svg);
+    background-image: url(../images/header-shapes-big.svg), url(../images/header-background-big.svg);
     background-size: 97.04% 85.48%, cover;
     background-repeat: no-repeat;
     background-position: 100% 10%, bottom left;
@@ -704,6 +706,7 @@ header {
     flex-flow: row;
     flex-grow: 0;
     width: calc(100vw - 284px);
+    box-shadow: 0 8px 16px var(--font-form-label);
   }
 
   .works img {
@@ -724,7 +727,6 @@ header {
   .work:nth-child(even) .work-btn {
     background: var(--btn-active);
     color: var(--bckgrd);
-    box-shadow: 0 8px 16px var(--font-contact-des);
     transition: 0.3s ease;
   }
 
