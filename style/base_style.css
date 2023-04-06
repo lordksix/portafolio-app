@@ -12,7 +12,7 @@
   --border: #dfe1e6;
   --body-bg: #e5e5e5;
   --connect: #7f8cff;
-  --letter-bb: #c0ab00;
+  --letter-bb: #fff;
 }
 
 * {
@@ -409,7 +409,7 @@ header {
 
 .contact-info .section-title {
   text-align: center;
-  color: var(black);
+  color: var(--letter-bb);
   padding-bottom: 12px;
   font-weight: 700;
 }
@@ -417,7 +417,7 @@ header {
 .contact-info .description {
   font-weight: 400;
   text-align: center;
-  color: var(black);
+  color: var(--letter-bb);
   padding-bottom: 52px;
 }
 
