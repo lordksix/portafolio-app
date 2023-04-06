@@ -1,4 +1,3 @@
-console.log(window.innerWidth);
 const menuLinks = document.querySelectorAll('.menu li a');
 const headerLink = document.querySelector('.logo a');
 let headerHeight = document.getElementById("header").offsetHeight;
@@ -35,13 +34,9 @@ window.addEventListener('load',function(){
     window.addEventListener('scroll', ()=>{
         pageTop= window.scrollY+headerHeight*1.1;
         if (pageTop>postTops[counter+1]) {
-            console.log(postTops[counter]);
             counter++;
-            console.log(`scrolling down at  ${counter}`);
         } else if (counter > 0 && pageTop<postTops[counter]) {
             counter--;
-            console.log(postTops[counter]);
-            console.log(`scrolling up at  ${counter}`);
         }
         else if(counter!= prevCounter){
             menuLinks.forEach(element => {element.removeAttribute('class')});
