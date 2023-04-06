@@ -623,6 +623,11 @@ header {
     display: none;
   }
 
+  .selected {
+    border-bottom: var(--font-3) 2px solid;
+    transition: border-bottom 0.2s;
+  }
+
   /* **** Intro section **** */
 
   .intro {
