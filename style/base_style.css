@@ -167,6 +167,13 @@ header {
     background: var(--bg-contact);
   }
 
+  50% {
+    opacity: 85%;
+    z-index: 20;
+    font-size: 0;
+    background: var(--bg-contact);
+  }
+
   100% {
     opacity: 0%;
     font-size: 0;
