@@ -31,6 +31,8 @@
 # 📖 [Portfolio] <a name="about-project"></a>
 
 **Portfolio Web App** is a project to showcare different works and information about the a person or group.
+A video description of the project outline, [check out this loom recording](https://www.loom.com/share/8474211f3e22480b946f9ecd0f456ff4
+).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -42,9 +44,8 @@
   <summary>Client</summary>
   <ul>
     <li><a href="https://www.w3.org/TR/2011/WD-html5-20110405/">HTML5</a></li>
-  </ul>
-  <ul>
     <li><a href="https://www.w3.org/Style/CSS/specs.en.html">CSS</a></li>
+    <li><a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/">JavaScript</a></li>
   </ul>
 </details>
 
@@ -56,6 +57,7 @@
 - **Fast access to social media and other ways of contact**
 - **Easy to the eyes and cultivating at the same time**
 - **Form with backend support**
+- **Smooth scroll and continuous position refresh** 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -129,8 +131,9 @@ Go to [🚀 Live Demo](#live-demo) to check it out.
 ## 🔭 Future Features <a name="future-features"></a>
 
 Future chaves:
-- Add small CSS animations and CSS interactivity.
 - Add DOM manipulation for interactivity.
+- Menu overlay for mobile screen.
+- Projects description overlay.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
