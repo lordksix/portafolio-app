@@ -457,7 +457,7 @@ header {
 }
 
 .project-overlay.work-card .work-descrip {
-  overflow: scroll;
+  overflow: auto;
   max-height: 33vh;
   line-height: 200%;
 }
@@ -748,7 +748,6 @@ header {
   }
 
   .project-overlay.work-card .work-descrip {
-    overflow: scroll;
     max-height: 35vh;
   }
 
@@ -995,12 +994,14 @@ header {
 
   .project-overlay.work-card .work-card-body {
     flex-direction: row;
-    gap: 24px;
+    gap: 40px;
+    height: 100%;
+    align-items: center;
   }
 
   .project-overlay.work-card .work-title-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-direction: column;
     gap: 12px;
   }
@@ -1015,6 +1016,10 @@ header {
   .project-overlay.work-card > .work-image {
     height: 45vh;
     width: 70%;
+  }
+
+  .project-overlay.work-card .work-langs {
+    justify-content: space-around;
   }
 
   .project-overlay.work-card .work-lang {

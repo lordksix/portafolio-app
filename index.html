@@ -21,7 +21,7 @@
       </div>
       <ul class="nav-menu">
         <input type="checkbox" id="menu_toggle" />
-        <label for="menu_toggle" class="menu_hamburger"></label>
+        <label for="menu_toggle" class="menu_hamburger" aria-label="Menu Opener"></label>
         <div class="menu">
           <li id="close_menu">X</li>
           <li><a href="#works">Portfolio</a></li>
@@ -214,15 +214,15 @@
       <form action="https://formspree.io/f/xgebldzy" method="post" id="contact-form">
         <ul class="contact-form-group">
           <li class="form-section">
-            <label for="name">Name</label>
+            <label for="name">Name<span aria-label="Required">*</span></label>
             <input type="text" id="name" maxlength="30" placeholder="Name" required>
           </li>
           <li class="form-section">
-            <label for="email">E-mail</label>
+            <label for="email">E-mail<span aria-label="Required">*</span></label>
             <input type="email" id="email" placeholder="E-mail" required>
           </li>
           <li class="form-section">
-            <label for="contact-descrip">Message</label>
+            <label for="contact-descrip">Message<span aria-label="Required">*</span></label>
             <textarea name="contact-descrip" id="contact-descrip" maxlength="500" placeholder=" Write your message here..." required></textarea>
           </li>
           <li class="form-section">
