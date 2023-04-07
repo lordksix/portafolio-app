@@ -15,6 +15,7 @@
   --letter-bb: #fff;
   --bg-contact: #5263ff;
   --bg-menu: #6070ff;
+  --bg-modal: #c1c7d0be;
 }
 
 * {
@@ -190,6 +191,59 @@ header {
 
 .menu_popup #close_menu {
   align-self: flex-end;
+}
+
+/* **** Project Modal **** */
+
+.project-overlay-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-modal);
+  top: 0;
+  left: 0;
+  z-index: 20;
+  padding-inline: max(16px, 4.3vw);
+  padding-block: max(40px, 4.86vh);
+}
+
+.project-overlay.work-card {
+  background-color: var(--bckgrd);
+  padding-inline: max(15px, 4.3vw);
+  padding-block: max(18px, 2.3vh);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  gap: 8px;
+}
+
+.project-overlay.work-card .work-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-overlay.work-card .work-image {
+  max-height: max(26.7vh, 220px);
+}
+
+.project-overlay.work-card .work-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-overlay.work-card .work-descrip {
+  overflow: scroll;
+}
+
+.project-overlay.work-card .work-lang {
+  font-size: 12px;
+}
+
+.project-overlay.work-card .work-btn {
+  font-size: 14px;
 }
 
 /* **** Intro section **** */
@@ -502,6 +556,7 @@ header {
 
 .contact-info .section-title {
   text-align: center;
+  width: auto;
   color: var(--letter-bb);
   background-color: var(--bg-contact);
   padding-bottom: 12px;
@@ -599,7 +654,6 @@ header {
     font-weight: 700;
     font-size: 40px;
     line-height: 130%;
-    min-width: 327px;
     width: 87.2vw;
     max-width: 400px;
   }
@@ -613,6 +667,7 @@ header {
     min-width: 327px;
     width: 87.2vw;
     max-width: min(750px, 100%);
+    border-radius: 20px;
   }
 
   .makeconection {
