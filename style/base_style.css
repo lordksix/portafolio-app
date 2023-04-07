@@ -131,28 +131,30 @@ header {
   max-width: 768px;
   background: var(--bckgrd);
   opacity: 0%;
-  z-index: 20;
+  z-index: -3;
   font-size: 0;
   font-weight: 600;
   color: var(--bckgrd);
   gap: 40px;
-  animation: fadeIn 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 .menu_popup.menu.out {
-  animation: fadeOut 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+  animation: fadeOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0%;
     font-size: 0;
+    z-index: -3;
     background: var(--bckgrd);
   }
 
   100% {
     opacity: 85%;
     font-size: max(32px, 0.8533vw);
+    z-index: 20;
     background: var(--bg-contact);
   }
 }
@@ -161,12 +163,14 @@ header {
   0% {
     opacity: 85%;
     font-size: max(32px, 0.8533vw);
+    z-index: 20;
     background: var(--bg-contact);
   }
 
   100% {
     opacity: 0%;
     font-size: 0;
+    z-index: -3;
     background: var(--bckgrd);
   }
 }
