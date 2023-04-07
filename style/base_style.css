@@ -14,12 +14,17 @@
   --connect: #7f8cff;
   --letter-bb: #fff;
   --bg-contact: #5263ff;
+  --bg-menu: #6070ff;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.modal-active .modal-bg {
+  filter: blur(5px);
 }
 
 li {
@@ -82,10 +87,98 @@ header {
   display: none;
 }
 
+.work-card li {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu li:hover {
+  transform: scale(1.1);
+  color: var(--font-1);
+  text-shadow: 0.5px 0.5px var(--font-1);
+  transition-property: transform, color, text-shadow;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
 .menu_hamburger {
   width: 18px;
   height: 12px;
   display: block;
+  background: url('../images/Union.svg');
+}
+
+.modal-active .menu_hamburger {
+  display: none;
+}
+
+.selected {
+  border-bottom: var(--font-3) 2px solid;
+  transition: border-bottom 0.2s;
+}
+
+.menu_popup.menu {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: max(28px, 7.5%);
+  width: 100%;
+  height: 100%;
+  max-width: 768px;
+  background: var(--bckgrd);
+  opacity: 0%;
+  z-index: 20;
+  font-size: 0;
+  font-weight: 600;
+  color: var(--bckgrd);
+  gap: 40px;
+  animation: fadeIn 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.menu_popup.menu.out {
+  animation: fadeOut 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+    font-size: 0;
+    background: var(--bckgrd);
+  }
+
+  100% {
+    opacity: 85%;
+    font-size: max(32px, 0.8533vw);
+    background: var(--bg-contact);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 85%;
+    font-size: max(32px, 0.8533vw);
+    background: var(--bg-contact);
+  }
+
+  100% {
+    opacity: 0%;
+    font-size: 0;
+    background: var(--bckgrd);
+  }
+}
+
+.menu_popup a {
+  font-size: max(32px, 0.8533vw);
+  font-weight: 600;
+  color: var(--bckgrd);
+}
+
+.menu_popup #close_menu {
+  align-self: flex-end;
 }
 
 /* **** Intro section **** */
@@ -186,13 +279,6 @@ header {
   display: flex;
   flex-flow: column;
   gap: 20px;
-}
-
-.work-card li {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .work-btn {
@@ -485,15 +571,6 @@ header {
     line-height: 111%;
   }
 
-  .menu li:hover {
-    transform: scale(1.3);
-    color: var(--font-1);
-    text-shadow: 0.5px 0.5px var(--font-1);
-    transition-property: transform, color, text-shadow;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-  }
-
   /* **** Intro section **** */
 
   .info {
@@ -596,6 +673,15 @@ header {
     --top-nav: clamp(26px * 2 + max(18px, 1.25vw) * 1.11, (1440px - 100vw) * 1000, 1.801vw * 2 + max(18px, 1.25vw) * 1.11);
   }
 
+  .menu li:hover {
+    transform: scale(1.3);
+    color: var(--font-1);
+    text-shadow: 0.5px 0.5px var(--font-1);
+    transition-property: transform, color, text-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
   /* **** Header section **** */
 
   header {
@@ -625,9 +711,8 @@ header {
     display: none;
   }
 
-  .selected {
-    border-bottom: var(--font-3) 2px solid;
-    transition: border-bottom 0.2s;
+  #close_menu {
+    display: none;
   }
 
   /* **** Intro section **** */
