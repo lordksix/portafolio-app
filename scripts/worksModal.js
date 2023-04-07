@@ -89,10 +89,13 @@ function workModal(e) {
   workCardImg.classList.add('work-image');
   docFragment.appendChild(workCardImg);
 
+  const workdCardBody = document.createElement('div');
+  workdCardBody.classList.add('work-card-body');
+
   const workdCardDescrip = document.createElement('p');
   workdCardDescrip.classList.add('work-descrip');
   workdCardDescrip.textContent = workCardInf.description;
-  docFragment.appendChild(workdCardDescrip);
+  workdCardBody.appendChild(workdCardDescrip);
 
   const workdCardFooter = document.createElement('div');
   workdCardFooter.classList.add('work-title-footer');
@@ -113,6 +116,7 @@ function workModal(e) {
     workdCardBtns.classList.add('work-btn');
     const workdCardBtnsLink = document.createElement('a');
     workdCardBtnsLink.href = workCardInf.connectionsURL[i];
+    workdCardBtnsLink.target = '_blank';
     workdCardBtnsLink.textContent = workCardInf.connectionstext[i];
     const workdCardBtnsImg = document.createElement('img');
     workdCardBtnsImg.src = workCardInf.connectionsBtn[i];
@@ -124,7 +128,8 @@ function workModal(e) {
 
   workdCardFooter.appendChild(workdCardLangs);
   workdCardFooter.appendChild(workdCardBtnsCtn);
-  docFragment.appendChild(workdCardFooter);
+  workdCardBody.appendChild(workdCardFooter);
+  docFragment.appendChild(workdCardBody);
 
   workCardArticule.append(docFragment);
 
@@ -132,12 +137,15 @@ function workModal(e) {
   workCardArticuleWrapper.classList.add('project-overlay-wrapper');
   workCardArticuleWrapper.appendChild(workCardArticule);
 
+  console.log(workCardArticuleWrapper);
+
   body.appendChild(workCardArticuleWrapper);
 
   const workModalClose = document.querySelector('.work-clase');
   const workModal = document.querySelector('.project-overlay-wrapper');
   workModalClose.addEventListener('click', () => {
-    body.removeChild(workModal);
+    workModal.classList.add('out');
+    setTimeout(() => body.removeChild(workModal), 300);
     body.classList.remove('modal-active');
   });
 }
