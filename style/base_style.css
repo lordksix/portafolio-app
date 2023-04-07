@@ -260,12 +260,7 @@ header {
   padding: 4px 12px;
   background: var(--connect);
   border-radius: 8px;
-}
-
-.work-lang span {
   font-weight: 500;
-  color: var(black);
-  font-size: 12px;
   line-height: 133%;
 }
 
@@ -365,7 +360,7 @@ header {
   padding-inline: 12px;
   padding-block: 9px 9.72px;
   justify-content: flex-start;
-  background-color: var(--body-bg);
+  background-color: var(--font-contact-des);
   margin: 12px;
   border-radius: 8px;
   max-width: 303px;
@@ -536,7 +531,8 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    color: var(--bg-contact);
+    color: var(--btn-active);
+    background-color: var(--bckgrd);
     text-align: left;
     vertical-align: top;
     min-width: 327px;
@@ -759,7 +755,7 @@ header {
     line-height: 133%;
   }
 
-  .work-lang span {
+  .work-lang {
     font-size: max(12px, 0.833vw);
   }
 

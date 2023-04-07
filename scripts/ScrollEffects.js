@@ -1,6 +1,6 @@
 const menuLinks = document.querySelectorAll('.menu li a');
 const headerLink = document.querySelector('.logo a');
-let headerHeight = document.getElementById('header').offsetHeight;
+let headerHeight = document.getElementById('header').offsetHeight * 1.1;
 
 function smoothScroll(e) {
   e.preventDefault();
@@ -30,7 +30,7 @@ window.addEventListener('load', () => {
     postTops.push(Math.floor(element.getBoundingClientRect().top + window.scrollY));
   });
   window.addEventListener('scroll', () => {
-    pageTop = window.scrollY + headerHeight * 1.1;
+    pageTop = window.scrollY + headerHeight * 1.15;
     if (pageTop > postTops[counter + 1]) counter += 1;
     else if (counter > 0 && pageTop < postTops[counter]) counter -= 1;
     else if (counter !== prevCounter) {
@@ -49,7 +49,7 @@ window.addEventListener('load', () => {
       postTops.push(Math.floor(element.getBoundingClientRect().top + window.scrollY));
     });
     headerHeight = document.getElementById('header').offsetHeight;
-    const pagePosition = window.scrollY + headerHeight * 1.1;
+    const pagePosition = window.scrollY + headerHeight * 1.15;
     counter = 0;
     postTops.forEach((element) => {
       if (pagePosition > element) {
