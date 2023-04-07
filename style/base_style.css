@@ -459,6 +459,7 @@ header {
 .project-overlay.work-card .work-descrip {
   overflow: scroll;
   max-height: 33vh;
+  line-height: 200%;
 }
 
 .project-overlay.work-card .work-lang {
@@ -975,7 +976,7 @@ header {
     padding-inline: 1.7vw;
     padding-block: 1.7vh;
     font-size: 32px;
-    max-height: 89vh;
+    height: 89vh;
   }
 
   .project-overlay.work-card .work-title {
