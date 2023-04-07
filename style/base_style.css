@@ -12,7 +12,8 @@
   --border: #dfe1e6;
   --body-bg: #e5e5e5;
   --connect: #7f8cff;
-  --letter-bb: #c0ab00;
+  --letter-bb: #fff;
+  --bg-contact: #5263ff;
 }
 
 * {
@@ -259,12 +260,7 @@ header {
   padding: 4px 12px;
   background: var(--connect);
   border-radius: 8px;
-}
-
-.work-lang span {
   font-weight: 500;
-  color: var(black);
-  font-size: 12px;
   line-height: 133%;
 }
 
@@ -364,7 +360,7 @@ header {
   padding-inline: 12px;
   padding-block: 9px 9.72px;
   justify-content: flex-start;
-  background-color: var(--body-bg);
+  background-color: var(--font-contact-des);
   margin: 12px;
   border-radius: 8px;
   max-width: 303px;
@@ -409,7 +405,8 @@ header {
 
 .contact-info .section-title {
   text-align: center;
-  color: var(black);
+  color: var(--letter-bb);
+  background-color: var(--bg-contact);
   padding-bottom: 12px;
   font-weight: 700;
 }
@@ -417,7 +414,8 @@ header {
 .contact-info .description {
   font-weight: 400;
   text-align: center;
-  color: var(black);
+  color: var(--letter-bb);
+  background-color: var(--bg-contact);
   padding-bottom: 52px;
 }
 
@@ -464,7 +462,8 @@ header {
 .form-section label {
   font-size: 14px;
   line-height: 150%;
-  color: var(black);
+  color: var(--letter-bb);
+  background-color: var(--bg-contact);
 }
 
 /* **** Media Queries 375px and 768px **** */
@@ -532,7 +531,8 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    color: var(--font-2);
+    color: var(--btn-active);
+    background-color: var(--bckgrd);
     text-align: left;
     vertical-align: top;
     min-width: 327px;
@@ -755,7 +755,7 @@ header {
     line-height: 133%;
   }
 
-  .work-lang span {
+  .work-lang {
     font-size: max(12px, 0.833vw);
   }
 
