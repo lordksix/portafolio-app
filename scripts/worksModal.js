@@ -116,18 +116,22 @@ function workModal(e) {
   const workdCardBtnsCtn = document.createElement('div');
   workdCardBtnsCtn.classList.add('work-btns');
   for (let i = 0; i < 2; i += 1) {
-    const workdCardBtns = document.createElement('button');
-    workdCardBtns.classList.add('work-btn');
     const workdCardBtnsLink = document.createElement('a');
     workdCardBtnsLink.href = workCardInf.connectionsURL[i];
     workdCardBtnsLink.target = '_blank';
-    workdCardBtnsLink.textContent = workCardInf.connectionstext[i];
+    const workdCardBtns = document.createElement('button');
+    workdCardBtns.classList.add('work-btn');
+    const workdCardBtnsText = document.createElement('span');
+    workdCardBtnsText.textContent = workCardInf.connectionstext[i];
+    workdCardBtns.appendChild(workdCardBtnsText);
     const workdCardBtnsImg = document.createElement('img');
     workdCardBtnsImg.src = workCardInf.connectionsBtn[i];
     workdCardBtnsImg.alt = workCardInf.connectionstext[i];
     workdCardBtnsImg.classList.add('work-image');
-    workdCardBtns.append(workdCardBtnsLink, workdCardBtnsImg);
-    workdCardBtnsCtn.appendChild(workdCardBtns);
+    workdCardBtns.appendChild(workdCardBtnsImg);
+
+    workdCardBtnsLink.append(workdCardBtns);
+    workdCardBtnsCtn.appendChild(workdCardBtnsLink);
   }
 
   workdCardFooter.appendChild(workdCardLangs);
