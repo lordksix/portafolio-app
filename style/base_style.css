@@ -17,6 +17,8 @@
   --bg-contact: #5263ff;
   --bg-menu: #6070ff;
   --bg-modal: #c1c7d0be;
+  --font-error: #f00;
+  --form-valid: #0f0;
 }
 
 * {
@@ -683,6 +685,7 @@ header {
   line-height: 118%;
   height: 48px;
   max-width: 481px;
+  color: var(--font-1);
 }
 
 .form-section textarea {
@@ -700,6 +703,18 @@ header {
   line-height: 150%;
   color: var(--letter-bb);
   background-color: var(--bg-contact);
+}
+
+.form-section .invalid {
+  border: 2px solid var(--font-error);
+  color: var(--font-error);
+  box-shadow: none;
+}
+
+.form-section .valid {
+  border: 2px solid var(--form-valid);
+  color: var(--font-1);
+  box-shadow: none;
 }
 
 /* **** Media Queries 375px and 768px **** */

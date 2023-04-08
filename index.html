@@ -11,6 +11,7 @@
   <script src="./scripts/ScrollEffects.js" defer></script>
   <script src="./scripts/menuModal.js" defer></script>
   <script src="./scripts/worksModal.js" defer></script>
+  <script src="./scripts/formValidation.js" defer></script>
   <title>Portfolio Template</title>
 </head>
 <body> 
@@ -215,15 +216,16 @@
         <ul class="contact-form-group">
           <li class="form-section">
             <label for="name">Name<span aria-label="Required">*</span></label>
-            <input type="text" id="name" maxlength="30" placeholder="Name" required>
+            <input type="text" id="name" maxlength="30" name="name" placeholder="Name" required>
           </li>
           <li class="form-section">
             <label for="email">E-mail<span aria-label="Required">*</span></label>
-            <input type="email" id="email" placeholder="E-mail" required>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
           </li>
           <li class="form-section">
             <label for="contact-descrip">Message<span aria-label="Required">*</span></label>
             <textarea name="contact-descrip" id="contact-descrip" maxlength="500" placeholder=" Write your message here..." required></textarea>
+            <p id="validation"></p>
           </li>
           <li class="form-section">
             <button class="work-btn" type="submit">Get in touch</button>
