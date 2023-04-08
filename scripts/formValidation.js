@@ -3,7 +3,7 @@ const formSumitValidation = document.getElementById('contact-form');
 const formMessage = document.getElementById('validation');
 
 const patterns = {
-  email: /^([a-z\d.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
+  email: /^(([^<>()[\]\\/.,;:\s*@"]+(\.[^<>()[\]\\/.,;:\s*@"]+)*)|(".+"))@((\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
 };
 
 function validate(field, regex) {
