@@ -9,22 +9,35 @@ const patterns = {
   email: /^(([^<>()[\]\\/.,;:\s*@"]+(\.[^<>()[\]\\/.,;:\s*@"]+)*)|(".+"))@((\[\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
 };
 
-function validate(field, regex) {
+function showMessage(input, message) {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+  msg.style.color = 'red';
+  msg.style.fontSize = '14px';
+  msg.style.fontWeight = 'bold';
+}
+
+function validate(field, regex, input) {
   if (regex.test(field.value)) {
     field.classList.remove('invalid');
     field.classList.add('valid');
+    showMessage(input, '');
   } else {
     field.classList.remove('valid');
     field.classList.add('invalid');
+    showMessage(input, `Please, enter a correct ${field.attributes.name.value} address`);
   }
 }
-function validateSize(field, size) {
+function validateSize(field, size, input) {
   if (field.value.length <= size && field.value.length > 0) {
     field.classList.remove('invalid');
     field.classList.add('valid');
+    showMessage(input, '');
   } else {
     field.classList.remove('valid');
     field.classList.add('invalid');
+    if (field.value.length === 0) showMessage(input, `Please, ${field.attributes.name.value} is required`);
+    else showMessage(input, `Please, ${field.attributes.name.value} should be shorter`);
   }
 }
 
@@ -37,13 +50,13 @@ formInputs.forEach((formInput) => {
     const input = e.target.attributes;
     switch (input.name.value) {
       case 'name':
-        validateSize(e.target, 30);
+        validateSize(e.target, 30, formInput);
         break;
       case 'email':
-        validate(e.target, patterns[input.name.value]);
+        validate(e.target, patterns[input.name.value], formInput);
         break;
-      case 'contact-descrip':
-        validateSize(e.target, 500);
+      case 'message':
+        validateSize(e.target, 500, formInput);
         break;
       default:
         break;
