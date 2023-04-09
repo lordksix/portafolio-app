@@ -3,6 +3,12 @@ const formSumitValidation = document.getElementById('contact-form');
 const formMessage = document.getElementById('validation');
 const formTextArea = document.querySelector('form textarea');
 const formInputs = Array.from(formInputNodes);
+const formStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
 formInputs.push(formTextArea);
 
 const patterns = {
@@ -47,13 +53,13 @@ function lookInvalid() {
 
 formInputs.forEach((formInput) => {
   formInput.addEventListener('keyup', (e) => {
-    const input = e.target.attributes;
-    switch (input.name.value) {
+    const input = e.target.attributes.name.value;
+    switch (input) {
       case 'name':
         validateSize(e.target, 30, formInput);
         break;
       case 'email':
-        validate(e.target, patterns[input.name.value], formInput);
+        validate(e.target, patterns[input], formInput);
         break;
       case 'message':
         validateSize(e.target, 500, formInput);
@@ -61,8 +67,19 @@ formInputs.forEach((formInput) => {
       default:
         break;
     }
+    formStorage[input] = e.target.value;
+    const formToStorage = JSON.stringify(formStorage);
+    localStorage.setItem('formData', formToStorage);
   });
 });
+
+function loadLocalStorage() {
+  const formStr = localStorage.getItem('formData');
+  const formData = JSON.parse(formStr);
+  formInputs.forEach((formInput) => {
+    formInput.value = formData[formInput.attributes.name.value];
+  });
+}
 
 formSumitValidation.addEventListener('submit', (e) => {
   formMessage.style.fontSize = '18px';
@@ -76,3 +93,12 @@ formSumitValidation.addEventListener('submit', (e) => {
     formMessage.textContent = 'You have submited your application';
   }
 });
+
+formSumitValidation.addEventListener('reset', () => {
+  localStorage.clear();
+  Object.keys(formStorage).forEach((key) => {
+    formStorage[key] = '';
+  });
+});
+
+window.addEventListener('load', loadLocalStorage);

@@ -695,7 +695,9 @@ header {
 }
 
 .form-section:last-child {
+  gap: 12px;
   justify-content: flex-start;
+  flex-flow: row wrap;
 }
 
 .form-section label {
