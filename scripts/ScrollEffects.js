@@ -67,6 +67,5 @@ window.addEventListener('load', () => {
     doneResizing = setTimeout(() => resetpagePosition(), 200);
   });
 });
-
 menuLinks.forEach((link) => link.addEventListener('click', smoothScroll));
 headerLink.addEventListener('click', smoothScrollTop);
