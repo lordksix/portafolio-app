@@ -35,8 +35,8 @@ window.addEventListener('load', () => {
     else if (counter > 0 && pageTop < postTops[counter]) counter -= 1;
     else if (counter !== prevCounter) {
       menuLinks.forEach((element) => element.removeAttribute('class'));
-      if (counter > 0) {
-        const thisLink = document.querySelector(`.menu li:nth-child(${counter}) a`);
+      if (counter > 0 && counter < 4) {
+        const thisLink = document.querySelector(`.menu li:nth-child(${counter + 1}) a`);
         thisLink.className = 'selected';
       }
       prevCounter = counter;
@@ -57,8 +57,8 @@ window.addEventListener('load', () => {
       }
     });
     menuLinks.forEach((element) => element.removeAttribute('class'));
-    if (counter > 0) {
-      const thisLink = document.querySelector(`.menu li:nth-child(${counter}) a`);
+    if (counter > 0 && counter < 4) {
+      const thisLink = document.querySelector(`.menu li:nth-child(${counter + 1}) a`);
       thisLink.className = 'selected';
     }
   }
