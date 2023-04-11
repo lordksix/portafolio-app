@@ -51,3 +51,24 @@ const works = [
     connectionsURL: ['https://lordksix.github.io/portafolio-app/', 'https://github.com/lordksix/portafolio-app'],
   },
 ];
+
+const projectBtns = document.querySelectorAll('.work .work-btn');
+const bodyTag = document.querySelector('body');
+
+function projectModal(e) {
+  const projectTarget = parseInt(e.target.dataset.workbtn, 10);
+
+  const projectOverlay = document.createElement('div');
+  projectOverlay.classList.add('project-overlay-wrapper');
+
+  const projectCtn = document.createElement('div');
+  projectCtn.classList.add('project-overlay');
+
+  
+
+  projectOverlay.appendChild(projectCtn);
+  bodyTag.appendChild(projectOverlay);
+  
+}
+
+projectBtns.forEach((btn) => btn.addEventListener('click', projectModal));
