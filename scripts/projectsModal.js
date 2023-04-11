@@ -56,18 +56,39 @@ const projectBtns = document.querySelectorAll('.work .work-btn');
 const bodyTag = document.querySelector('body');
 
 function projectModal(e) {
+  const docFragment = document.createDocumentFragment();
+
   const projectTarget = parseInt(e.target.dataset.workbtn, 10);
 
   const projectOverlay = document.createElement('div');
   projectOverlay.classList.add('project-overlay-wrapper');
 
   const projectCtn = document.createElement('div');
-  projectCtn.classList.add('project-overlay');
+  projectCtn.classList.add('project-overlay', 'work-card');
+
+  const projecHeadingCtn = document.createElement('div');
+  projecHeadingCtn.classList.add('work-title-container');
+
+  const projectCloseBtn = document.createElement('span');
+  projectCloseBtn.textContent = 'X';
+  projectCloseBtn.classList.add('work-clase');
+
+  const projectHeading = document.createElement('h2');
+  projectHeading.textContent = works[projectTarget].name;
+  projectHeading.classList.add('work-title');
 
   
 
+  
+  projecHeadingCtn.appendChild(projectHeading);
+  projecHeadingCtn.appendChild(projectCloseBtn);
+  docFragment.appendChild(projecHeadingCtn);
+  projectCtn.appendChild(docFragment);
   projectOverlay.appendChild(projectCtn);
   bodyTag.appendChild(projectOverlay);
+
+  const closeBtn = document.querySelector('.work-clase');
+  closeBtn.addEventListener('click', () => bodyTag.removeChild(projectOverlay));
   
 }
 
