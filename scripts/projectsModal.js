@@ -1,3 +1,6 @@
+const btnLive = 'See live';
+const btnSource = 'See source';
+
 const works = [
   {
     name: 'Tonic',
@@ -8,7 +11,7 @@ const works = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: './images/Snapshoot-Portfolio.svg',
     connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
-    connectionstext: ['See live', 'See source'],
+    connectionstext: [btnLive, btnSource],
     connectionsURL: ['https://lordksix.github.io/portafolio-app/', 'https://github.com/lordksix/portafolio-app'],
   },
   {
@@ -20,7 +23,7 @@ const works = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: './images/Snapshoot-multi.svg',
     connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
-    connectionstext: ['See live', 'See source'],
+    connectionstext: [btnLive, btnSource],
     connectionsURL: ['https://lordksix.github.io/portafolio-app/', 'https://github.com/lordksix/portafolio-app'],
   },
   {
@@ -32,7 +35,7 @@ const works = [
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: './images/topic-porta.svg',
     connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
-    connectionstext: ['See live', 'See source'],
+    connectionstext: [btnLive, btnSource],
     connectionsURL: ['https://lordksix.github.io/portafolio-app/', 'https://github.com/lordksix/portafolio-app'],
   },
   {
@@ -44,7 +47,7 @@ const works = [
     tags: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
     snapshot: './images/mul-stories-porta.svg',
     connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
-    connectionstext: ['See live', 'See source'],
+    connectionstext: [btnLive, btnSource],
     connectionsURL: ['https://lordksix.github.io/portafolio-app/', 'https://github.com/lordksix/portafolio-app'],
   },
 ];
