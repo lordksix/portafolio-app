@@ -9,18 +9,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style/base_style.css">
   <script src="./scripts/ScrollEffects.js" defer></script>
+  <script src="./scripts/menuModal.js" defer></script>
   <title>Portfolio Template</title>
 </head>
 <body> 
   <header id="header">
     <nav class="nav-header">
-      <div class="logo">
+      <div class="logo modal-bg">
         <a href="#intro">My Logo</a>
       </div>
       <ul class="nav-menu">
         <input type="checkbox" id="menu_toggle" />
-        <label for="menu_toggle" class="menu_hamburger"><img src="./images/Union.svg" alt="Menu"></label>
+        <label for="menu_toggle" class="menu_hamburger" aria-label="Menu Opener"></label>
         <div class="menu">
+          <li id="close_menu">X</li>
           <li><a href="#works">Portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -28,7 +30,7 @@
       </ul>
     </nav>
   </header>
-  <section class="intro info" id="intro">
+  <section class="intro info modal-bg" id="intro">
     <h1 class="section-title">I'm Alexandra. <br> Glad to see you!</h2>
     <p class="description">I'm a software developer! I can help you build a product, 
       feature or website Look through some of my work and experience! If you like what 
@@ -55,7 +57,7 @@
      </ul>
     </div>
   </section>
-  <section class="scroll" id="works">
+  <section class="scroll modal-bg" id="works">
     <ul class="works">
       <li class="work">
         <img src="./images/Snapshoot-Portfolio.svg" alt="Tonic Project, 2015" class="work-image">
@@ -74,7 +76,7 @@
             <li class="work-lang"><span>JavaScript</span></li>
           </ul>
           <div class="work-btns">
-            <button type="button" class="work-btn"><span>See project</span></button>
+            <button type="button" class="work-btn" data-workBtn="1">See project</button>
           </div>
         </div>
       </li>
@@ -94,7 +96,7 @@
             <li class="work-lang"><span>JavaScript</span></li>
           </ul>
           <div class="work-btns">
-            <button type="button" class="work-btn"><span>See project</span></button>
+            <button type="button" class="work-btn" data-workBtn="2">See project</button>
           </div>
         </div>      
       </li>
@@ -114,7 +116,7 @@
             <li class="work-lang"><span>JavaScript</span></li>
           </ul>
           <div class="work-btns">
-            <button type="button" class="work-btn"><span>See project</span></button>
+            <button type="button" class="work-btn" data-workBtn="3">See project</button>
           </div>    
         </div>
       </li>
@@ -135,13 +137,13 @@
             <li class="work-lang"><span>JavaScript</span></li>
           </ul>
           <div class="work-btns">
-            <button type="button" class="work-btn"><span>See project</span></button>
+            <button type="button" class="work-btn" data-workBtn="4">See project</button>
           </div>
         </div>       
       </li>
   </ul>
   </section>
-  <section class="about-contact">
+  <section class="about-contact modal-bg">
     <section class="about info scroll" id="about">
       <div class="contact">
         <h2 class="section-title">About Myself</h2>
@@ -211,19 +213,24 @@
       <form action="https://formspree.io/f/xgebldzy" method="post" id="contact-form">
         <ul class="contact-form-group">
           <li class="form-section">
-            <label for="name">Name</label>
-            <input type="text" id="name" maxlength="30" placeholder="Name" required>
+            <label for="name">Name<span aria-label="Required">*</span></label>
+            <input type="text" id="name" maxlength="30" name="name" placeholder="Name" required>
+            <small></small>
           </li>
           <li class="form-section">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="E-mail" required>
+            <label for="email">E-mail<span aria-label="Required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <small></small>
           </li>
           <li class="form-section">
-            <label for="contact-descrip">Message</label>
-            <textarea name="contact-descrip" id="contact-descrip" maxlength="500" placeholder=" Write your message here..." required></textarea>
+            <label for="contact-descrip">Message<span aria-label="Required">*</span></label>
+            <textarea name="message" id="contact-descrip" maxlength="500" placeholder=" Write your message here..." required></textarea>
+            <small></small>
+            <p id="validation"></p>
           </li>
           <li class="form-section">
             <button class="work-btn" type="submit">Get in touch</button>
+            <button class="work-btn" type="reset">Reset</button>
           </li>
         </ul>
       </form>
