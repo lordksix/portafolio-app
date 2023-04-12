@@ -1035,10 +1035,6 @@ header {
     width: 70%;
   }
 
-  .project-overlay.work-card .work-langs {
-    justify-content: space-around;
-  }
-
   .project-overlay.work-card .work-lang {
     font-size: 12px;
   }
