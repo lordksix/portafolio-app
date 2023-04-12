@@ -99,7 +99,6 @@ const works2 = [
   },
 ];
 
-const projectBtns = document.querySelectorAll('.work .work-btn');
 const bodyTag = document.querySelector('body');
 
 function projectModal(e) {
@@ -117,7 +116,7 @@ function projectModal(e) {
 
   const projectCloseBtn = document.createElement('span');
   projectCloseBtn.textContent = 'X';
-  projectCloseBtn.classList.add('work-clase');
+  projectCloseBtn.classList.add('work-clase', 'work-title');
 
   const projectHeading = document.createElement('h2');
   projectHeading.textContent = workCardInf.name;
@@ -204,12 +203,12 @@ function renderworks() {
   const docFragmentSd = document.createDocumentFragment();
   const docFragment = document.createDocumentFragment();
   const docFragementFinal = document.createDocumentFragment();
-  
+
   const projectOverlay = document.createElement('ul');
   projectOverlay.classList.add('works');
   const workSection = document.querySelector('#works');
 
-  for(let i = 0; i < works2.length; i += 1) {
+  for (let i = 0; i < works2.length; i += 1) {
     const workCardInf = works2[i];
     const projectCtn = document.createElement('li');
     projectCtn.classList.add('work');
@@ -258,22 +257,20 @@ function renderworks() {
     workCardBtnsCtn.classList.add('work-btns');
     const workCardBtns = document.createElement('button');
     workCardBtns.classList.add('work-btn');
-    const workCardBtnsText = document.createElement('span');
-    workCardBtnsText.textContent = 'See project';
-    workCardBtns.appendChild(workCardBtnsText);
+    workCardBtns.textContent = 'See project';
+    workCardBtns.setAttribute('data-workBtn', `${i}`);
     workCardBtnsCtn.append(workCardBtns);
-  docFragment.appendChild(workCardBtnsCtn);
+    docFragment.appendChild(workCardBtnsCtn);
     workCard.append(docFragment);
     docFragmentSd.appendChild(workCard);
     projectCtn.appendChild(docFragmentSd);
     docFragementFinal.appendChild(projectCtn);
   }
-  
+
   projectOverlay.appendChild(docFragementFinal);
   workSection.appendChild(projectOverlay);
+  const projectBtns = document.querySelectorAll('.work .work-btn');
+  projectBtns.forEach((btn) => btn.addEventListener('click', projectModal));
 }
 
-
 window.addEventListener('load', renderworks);
-projectBtns.forEach((btn) => btn.addEventListener('click', projectModal));
-
