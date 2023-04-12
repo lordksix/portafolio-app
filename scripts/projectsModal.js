@@ -206,7 +206,10 @@ function renderworks() {
 
   const projectOverlay = document.createElement('ul');
   projectOverlay.classList.add('works');
-  const workSection = document.querySelector('#works');
+  const introSection = document.querySelector('#intro');
+  const workSection = document.createElement('section');
+  workSection.classList.add('scroll', 'modal-bg');
+  workSection.setAttribute('id', 'works');
 
   for (let i = 0; i < works2.length; i += 1) {
     const workCardInf = works2[i];
@@ -269,6 +272,7 @@ function renderworks() {
 
   projectOverlay.appendChild(docFragementFinal);
   workSection.appendChild(projectOverlay);
+  introSection.parentNode.insertBefore(workSection, introSection.nextSibling);
   const projectBtns = document.querySelectorAll('.work .work-btn');
   projectBtns.forEach((btn) => btn.addEventListener('click', projectModal));
 }
