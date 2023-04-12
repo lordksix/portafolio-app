@@ -234,7 +234,7 @@ header {
 .work-btn {
   color: var(--btn-color);
   background-color: var(--bckgrd);
-  border: 1px solid var(--font-2);
+  border: 1px solid var(--connect);
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -258,6 +258,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  gap: 5px;
 }
 
 .cat-title {
@@ -293,7 +294,7 @@ header {
 
 .work-lang {
   padding: 4px 12px;
-  background: var(--connect);
+  background: var(--font-contact-des);
   border-radius: 8px;
   font-weight: 500;
   line-height: 133%;
@@ -813,7 +814,7 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    color: var(--btn-active);
+    color: var(--bg-contact);
     background-color: var(--bckgrd);
     text-align: left;
     vertical-align: top;
@@ -1033,10 +1034,6 @@ header {
   .project-overlay.work-card > .work-image {
     height: 45vh;
     width: 70%;
-  }
-
-  .project-overlay.work-card .work-langs {
-    justify-content: space-around;
   }
 
   .project-overlay.work-card .work-lang {
