@@ -57,8 +57,7 @@ const bodyTag = document.querySelector('body');
 
 function projectModal(e) {
   const docFragment = document.createDocumentFragment();
-
-  const projectTarget = parseInt(e.target.dataset.workbtn, 10);
+  const workCardInf = works[parseInt(e.target.dataset.workbtn, 10)];
 
   const projectOverlay = document.createElement('div');
   projectOverlay.classList.add('project-overlay-wrapper');
@@ -74,22 +73,84 @@ function projectModal(e) {
   projectCloseBtn.classList.add('work-clase');
 
   const projectHeading = document.createElement('h2');
-  projectHeading.textContent = works[projectTarget].name;
+  projectHeading.textContent = workCardInf.name;
   projectHeading.classList.add('work-title');
 
-  
-
-  
   projecHeadingCtn.appendChild(projectHeading);
   projecHeadingCtn.appendChild(projectCloseBtn);
   docFragment.appendChild(projecHeadingCtn);
+
+  const workCat = document.createElement('ul');
+  workCat.classList.add('work-cat');
+  for (let i = 0; i < workCardInf.cat.length; i += 1) {
+    const catList = document.createElement('li');
+    if (i === 0) catList.classList.add('cat-title');
+    else catList.classList.add('cat-descrip');
+    catList.textContent = workCardInf.cat[i];
+    workCat.appendChild(catList);
+  }
+  docFragment.appendChild(workCat);
+
+  const workImage = document.createElement('img');
+  workImage.classList.add('work-image');
+  workImage.src = workCardInf.snapshot;
+  workImage.alt = `${workCardInf.name} Project, ${workCardInf.cat[2]}`;
+  docFragment.appendChild(workImage);
+
+  const workCardBody = document.createElement('div');
+  workCardBody.classList.add('work-card-body');
+
+  const workDescrip = document.createElement('p');
+  workDescrip.classList.add('work-descrip');
+  workDescrip.textContent = workCardInf.description;
+  workCardBody.appendChild(workDescrip);
+
+  docFragment.appendChild(workCardBody);
+
+  const workCardFooter = document.createElement('div');
+  workCardFooter.classList.add('work-title-footer');
+
+  const workCardLangs = document.createElement('ul');
+  workCardLangs.classList.add('work-langs');
+  workCardInf.tags.forEach((tag) => {
+    const langList = document.createElement('li');
+    langList.classList.add('work-lang');
+    langList.textContent = tag;
+    workCardLangs.appendChild(langList);
+  });
+
+  const workCardBtnsCtn = document.createElement('div');
+  workCardBtnsCtn.classList.add('work-btns');
+  for (let i = 0; i < 2; i += 1) {
+    const workCardBtnsLink = document.createElement('a');
+    workCardBtnsLink.href = workCardInf.connectionsURL[i];
+    workCardBtnsLink.target = '_blank';
+    const workCardBtns = document.createElement('button');
+    workCardBtns.classList.add('work-btn');
+    const workCardBtnsText = document.createElement('span');
+    workCardBtnsText.textContent = workCardInf.connectionstext[i];
+    workCardBtns.appendChild(workCardBtnsText);
+    const workCardBtnsImg = document.createElement('img');
+    workCardBtnsImg.src = workCardInf.connectionsBtn[i];
+    workCardBtnsImg.alt = workCardInf.connectionstext[i];
+    workCardBtnsImg.classList.add('work-image');
+    workCardBtns.appendChild(workCardBtnsImg);
+
+    workCardBtnsLink.append(workCardBtns);
+    workCardBtnsCtn.appendChild(workCardBtnsLink);
+  }
+
+  workCardFooter.appendChild(workCardLangs);
+  workCardFooter.appendChild(workCardBtnsCtn);
+  workCardBody.appendChild(workCardFooter);
+  docFragment.appendChild(workCardBody);
+
   projectCtn.appendChild(docFragment);
   projectOverlay.appendChild(projectCtn);
   bodyTag.appendChild(projectOverlay);
 
   const closeBtn = document.querySelector('.work-clase');
   closeBtn.addEventListener('click', () => bodyTag.removeChild(projectOverlay));
-  
 }
 
 projectBtns.forEach((btn) => btn.addEventListener('click', projectModal));
