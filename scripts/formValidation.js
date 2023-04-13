@@ -5,7 +5,7 @@ const errorMessage = document.getElementById('validation');
 function checkLowercase(e) {
   if (formInputNodes.value !== formInputNodes.value.toLowerCase()) {
     e.preventDefault();
-    errorMessage.textContent = 'Form was not submitted. Email should be lower-cased.';
+    errorMessage.textContent = 'Form was not submitted. Email should be lowercased.';
   } else {
     errorMessage.textContent = '';
   }
