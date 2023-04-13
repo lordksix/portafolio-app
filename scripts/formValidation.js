@@ -15,10 +15,12 @@ const formStorage = {
 
 function loadLocalStorage() {
   const formStr = localStorage.getItem('formData');
-  const formData = JSON.parse(formStr);
-  formInputsArr.forEach((formInput) => {
-    formInput.value = formData[formInput.attributes.name.value];
-  });
+  if (formStr) {
+    const formData = JSON.parse(formStr);
+    formInputsArr.forEach((formInput) => {
+      formInput.value = formData[formInput.attributes.name.value];
+    });
+  }
 }
 
 function checkLowercase(e) {
