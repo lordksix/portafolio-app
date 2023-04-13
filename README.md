@@ -57,7 +57,9 @@ A video description of the project outline, [check out this loom recording](http
 - **Fast access to social media and other ways of contact**
 - **Easy to the eyes and cultivating at the same time**
 - **Form with backend support**
-- **Smooth scroll and continuous position refresh** 
+- **Smooth scroll and continuous position refresh**
+- **Dinamic creation of content** 
+- **Form validation using JavaScript**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -131,9 +133,8 @@ Go to [🚀 Live Demo](#live-demo) to check it out.
 ## 🔭 Future Features <a name="future-features"></a>
 
 Future chaves:
-- Add DOM manipulation for interactivity.
-- Menu overlay for mobile screen.
-- Projects description overlay.
+- Add more effective form validation.
+- Add localStorage funcionality.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
