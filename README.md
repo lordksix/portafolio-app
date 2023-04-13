@@ -60,6 +60,7 @@ A video description of the project outline, [check out this loom recording](http
 - **Smooth scroll and continuous position refresh**
 - **Dinamic creation of content** 
 - **Form validation using JavaScript**
+- **Save information to local storage for re use**
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
@@ -133,8 +134,7 @@ Go to [🚀 Live Demo](#live-demo) to check it out.
 ## 🔭 Future Features <a name="future-features"></a>
 
 Future chaves:
-- Add more effective form validation.
-- Add localStorage funcionality.
+- None
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
